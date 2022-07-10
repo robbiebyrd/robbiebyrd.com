@@ -4,7 +4,7 @@ nav {
     padding: 0;
     position: relative;
     width: 100%;
-    z-index: 9900;
+    z-index: 99999997;
 }
 
 ul.menu {
@@ -91,6 +91,6 @@ ul.menu {
     font-size: 1.25rem;
 }
 
-#app-menu {
+#application-switcher {
     right: 0;
 }

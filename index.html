@@ -5,6 +5,7 @@
         <title>Mac OS 8.1</title>
         <link rel="shortcut icon" href="img/favicon.ico" />
         <link rel="stylesheet" href="css/platinum.css" />
+        <link rel="stylesheet" href="css/main.css" />
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -14,7 +15,7 @@
         <noscript>
             <p><em>This page requires JavaScript.</em></p>
         </noscript>
-        <div id="boot" class="modal">
+        <div id="boot" class="modal hidden">
             <button class="command_button boot-button close-button" id="boot-button">
                 <img src="img/mac.png" />
                 <br />
@@ -24,12 +25,15 @@
         <div id="sadmac" class="modal hidden">
             <img src="img/sadmac.png" />
         </div>
+        <div id="shutdown" class="modal hidden">
+            <img src="img/shutdown.png" />
+        </div>
         <nav>
             <div class="nav-wrapper">
                 <ul class="nav-list">
                     <li id="apple-logo">
                         <img src="img/apple.png" />
-                        <ul class="menu command_button">
+                        <ul id="apple-menu" class="menu command_button">
                             <li id="menu-about"><img src="img/mac.png" width="16" alt="About" />About</li>
                         </ul>
                     </li>
@@ -59,6 +63,12 @@
                         </ul>
                     </li>
                     <li>
+                        Special
+                        <ul class="menu command_button">
+                            <li id="menu-shutdown" class="noimg">Shutdown</li>
+                        </ul>
+                    </li>
+                    <li>
                         Help
                         <ul class="menu command_button">
                             <li class="disabled"><img src="img/about.png" width="16" alt="About" />There is no help</li>
@@ -66,11 +76,11 @@
                     </li>
                     <li id="macoslogo" class="nav-list">
                         <img src="img/macos.svg" alt="MacOS" />
-                        <ul id="app-menu" class="menu">
+                        <ul id="application-switcher" class="menu">
                         </ul>
                     </li>
                     <li id="time" class="time text-center timeText">
-                        Lo  ading...
+                        Loading...
                     </li>
                 </ul>
             </div>
@@ -80,31 +90,31 @@
                 <img src="img/about.png" alt="About" />
                 <h2>About</h2>
             </div>
+            <div class="icon draggable-icon ui-widget-content" id="icon-internet">
+                <img src="img/netscape.png" alt="Internet" />
+                <h2>Internet</h2>
+            </div>
         </div>
-        <div id="about" class="content resizable draggable-window" data-window-icon="img/about.png" data-window-name="About">
+        <div id="about" class="content resizable draggable-window hidden" data-window-icon="img/about.png" data-window-name="About">
             <div class="control-box close-box">
                 <a class="control-box-inner"></a>
             </div>
-            <div class="control-box zoom-box">
-                <div class="control-box-inner">
-                    <div class="zoom-box-inner"></div>
-                </div>
-            </div>
-            <div class="control-box window-collapse">
-                <div class="control-box-inner">
-                    <div class="window-collapse-inner"></div>
-                </div>
-            </div>
-            <h1 class="titlebar"><span>About</span></h1>
+            <h1 class="titlebar noright"><span>About</span></h1>
             <div class="inner">
                 <div class="icon">
                     <img src="img/about.png" alt="Macintosh Computer" />
                 </div>
                 <ul>
                     <li style="text-align: left;">
-                        <h1>Platinum</h1>
+                        <h1>About RobbieByrd.com</h1>
                         <p>
-                            A UI framework using native CSS/JS replications of the Mac OS 8.1 interface components. The project is named after the interface theme that came with MacOS 8 and 9, Platinum.
+                            This is my website, and I like it a lot.
+                        </p>
+                        <p>
+                            Based on
+                            <b><a href="https://github.com/robbiebyrd/platinum" target="_blank">Platinum</a></b>
+                            by
+                            <b><a href="https://github.com/robbiebyrd" target="_blank">Me!!!</a></b>.
                         </p>
                         <p>
                             Based on
@@ -137,13 +147,73 @@
                             EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
                             THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                         </p>
-                        <p></p>
+                        <p>Apple maintains the copyright on the background patterns, icons and interface components. Some UI elements are from Netscape Navigator, and are the intellectual property of Yahoo and/or Microsoft (I think, I'm not really sure). </p>
                     </li>
                 </ul>
                 <button class="command_button boot-button">Close</button>
             </div>
         </div>
-        <div id="controls" class="content noscroll draggable-window text-center" style="width: 20%;" data-window-icon="img/controls.png" data-window-name="Controls">
+
+        <div id="internet" class="content resizable draggable-window" data-window-icon="img/netscape.png" data-window-name="Netscape">
+            <div class="control-box close-box">
+                <a class="control-box-inner"></a>
+            </div>
+            <div class="control-box zoom-box">
+                <div class="control-box-inner">
+                    <div class="zoom-box-inner"></div>
+                </div>
+            </div>
+            <div class="control-box window-collapse">
+                <div class="control-box-inner">
+                    <div class="window-collapse-inner"></div>
+                </div>
+            </div>
+            <h1 class="titlebar"><span>Netscape Navigator 3.04</span></h1>
+            <div id="netscape_toolbar">
+                <div class="toolbar_buttons">
+                    <div class="home_button toolbar_button favorite" data-url="http://robbiebyrd.com/homepage">
+                        <h6>Home</h6>
+                    </div>
+                    <div class="back_button toolbar_button">
+                        <h6>Back</h6>
+                    </div>    
+                    <div class="forward_button toolbar_button">
+                        <h6>Forward</h6>
+                    </div>
+                    <div class="toolbar_button spacer">
+                    </div>
+
+                    <div class="logo toolbar_button">
+                        <img class="" src="img/netscape.png">
+                    </div>
+                </div>
+                <div class="toolbar_location">
+                    <div class="location_label">
+                        <label>Location :</label>
+                    </div>
+                    <div class="location_input">
+                        <input type="url" />
+                    </div>
+                    <div class="location_go">
+                        <button class="command_button go_button">GO</button>
+                    </div>
+                </div>
+                <div class="toolbar_favorites">
+                    <button class="command_button favorite" data-url="http://robbiebyrd.com/homepage">Homepage</button>
+                    <button class="command_button favorite" data-url="http://robbiebyrd.com/archive">Archive</button>
+                    <button class="command_button favorite" data-url="http://www.aol.com">AOL Instant Messenger</button>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="inner-content"></div>
+            </div>
+            <div class="netscape_footer">
+                http://www.google.com
+            </div>
+
+        </div>
+
+        <div id="controls" class="content noscroll draggable-window text-center hidden" data-window-icon="img/controls.png" data-window-name="Controls">
             <div class="control-box close-box">
                 <a class="control-box-inner"></a>
             </div>
@@ -214,6 +284,7 @@
             </audio>
         </div>
         <script src="js/platinum.js"></script>
+        <script src="js/drawdown.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
-

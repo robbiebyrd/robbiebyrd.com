@@ -42,7 +42,7 @@ body {
 }
 .content .inner {
     margin: 2px 4px 4px;
-    padding: 1em;
+    padding: 10px;
 }
 
 .content ul {
@@ -52,6 +52,8 @@ body {
 
 .content {
     position: absolute;
+    left: 1em;
+    top: 3em;
 }
 
 .control-box {
@@ -99,15 +101,20 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 3.5rem;
+    width: 45px;
 }
 
 .titlebar.noleft ::before {
-  width: 0.5rem;
+    width: 1px;
+}
+
+.titlebar.noright {
+  width: calc(100% - 3px);
+  margin-right: 4px;
 }
 
 .titlebar.noright ::after {
-    width: 0.5rem;
+    width: 1px;
 }
 
 .titlebar.halfright ::after {
@@ -117,7 +124,7 @@ body {
 .titlebar ::before {
     float: left;
     margin: 0;
-    width: 2rem;
+    width: 20px;
 }
 
 .titlebar ::before,
@@ -128,11 +135,13 @@ body {
 
 .titlebar span {
     padding: 0 1rem;
-    margin-left: -2rem;
 }
 
 .titlebar {
     margin: 0;
+    margin-right: 3px;
+    margin-left: 1px;
+    width: 97%;
 }
 
 .visuallyhidden {
@@ -216,6 +225,7 @@ h4,
 h5,
 h6 {
     font-weight: 100 !important;
+    font-family: "Charcoal", "Chicago", "Times New Roman", "Georgia", serif;
 }
 
 html,
@@ -294,6 +304,7 @@ body {
 .titlebar ::before,
 .titlebar ::after {
     background-color: #ccc;
+    margin-right: 1px;
 }
 
 .titlebar span {
@@ -438,10 +449,10 @@ div.content.noscroll .inner {
   background-image: url(../img/alert_stop.png);
 }
 
-#sadmac {
+#sadmac, #shutdown {
     text-align: center;
     padding: 15%;
-    z-index: 99999 !important;
+    z-index: 99999999 !important;
     width: 100%;
     height: 100%;
     display: block;

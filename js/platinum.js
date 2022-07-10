@@ -43,13 +43,33 @@ function clock() {
 
 function enableAppMenu() {
     jQuery(".draggable-window.content:not('.hidden')").each(function() {
-        jQuery( "<li><img src='" + jQuery(this).data("window-icon") + "' />" + jQuery(this).data("window-name") + "</li>" ).appendTo( "#app-menu" );
+        jQuery( "<li id='appmenu-" + jQuery(this).attr('id') + "'><img src='" + jQuery(this).data("window-icon") + "' />" + jQuery(this).data("window-name") + "</li>" ).appendTo( "#application-switcher" );
       });
 }
 
 function updateAppMenu() {
-    jQuery("#app-menu").empty()
+    jQuery("#application-switcher").empty()
     enableAppMenu()
+    var index_highest = 0;   
+    // more effective to have a class for the div you want to search and 
+    // pass that to your selector
+    $(".content").each(function() {
+        // always use a radix when using parseInt
+        var index_current = parseInt($(this).css("zIndex"), 10);
+        if(index_current > index_highest) {
+            index_highest = index_current;
+        }
+    });
+
+    jQuery("#application-switcher li").on("click", function () {
+        if (!jQuery(this).hasClass("disabled")) {
+            jQuery("#sound_window_open").trigger("play");
+            jQuery("#" + jQuery(this).get(0).id.split("-")[1])
+                .removeClass("hidden")
+                .css("z-index", index_highest + 1);
+            updateAppMenu()
+        }
+    });
 }
 
 function enableWindowDrag() {
@@ -68,36 +88,34 @@ function enableWindowDrag() {
 }
 
 function enableWindowResize() {
-    // Make windowds resiable
+    // Make windows resizable
     jQuery(".resizable .inner").resizable({
         handles: "se",
-        alsoResize: $(this).parent("div.content"),
         stop: function (event, ui) {
             jQuery("#sound_move_stop").trigger("play");
         },
+        resize: function( event, ui ) {console.log(event, ui)}
+
     });
 }
 
 function enableWindowZoom() {
     // Zoom Box -- Make Window Full Screen and toggle back
     jQuery(".zoom-box").on("click", function () {
+        console.log(jQuery(this))
         b = this.closest(".content");
         isMax = jQuery(this).data("max");
         i = jQuery(b).children(".inner");
         console.log(i);
         if (!isMax) {
-            jQuery(b)
-                .css("width", "99%")
-                .css("height", "95%")
-                .css("left", ".5rem")
-                .css("top", "2.5rem");
             jQuery(i)
-                .css("width", "99%")
-                .css("height", "95%")
-                .css("left", ".5rem")
+                .css("width", "95vw")
+                .css("height", "80vh")
+            jQuery(b)
+                .css("left", "2.5rem")
                 .css("top", "2.5rem");
 
-            jQuery(this)
+            jQuery(i)
                 .data("width", jQuery(b).css("width"))
                 .data("height", jQuery(b).css("height"))
                 .data("top", jQuery(b).css("top"))
@@ -109,7 +127,7 @@ function enableWindowZoom() {
             jQuery(b).removeAttr("style");
             jQuery("#sound_window_collapse").trigger("play");
             jQuery(i).removeAttr("style");
-            jQuery(this).data("max", false);
+            jQuery(i).data("max", false);
         }
     });
 
@@ -167,17 +185,17 @@ function enableWindowClose() {
 
 
 function enableNav() {
-    jQuery(".nav-list li, #app-menu li").on("mouseenter touch", function () {
+    jQuery(".nav-list li, #application-switcher li").on("mouseenter click touch", function () {
         jQuery(this).children().show();
     });
 
-    jQuery(".nav-list li, #app-menu li").on("mouseleave click touch", function () {
+    jQuery(".nav-list li, #application-switcher li").on("mouseleave click touch", function () {
         jQuery(this).children("ul").hide();
     });
 
     // Enable menu items to be clickable by default and open a windows/app with the same name
-    jQuery(".nav-list li ul li,  #app-menu li ul li").on("click", function () {
-        console.log();
+    jQuery(".nav-list li, #apple-menu li").on("click", function () {
+        console.log(this);
         if (!jQuery(this).hasClass("disabled")) {
             jQuery("#sound_window_open").trigger("play");
             jQuery("#" + jQuery(this).get(0).id.split("-")[1])

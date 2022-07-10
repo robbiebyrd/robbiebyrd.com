@@ -1,10 +1,8 @@
-# Platimum
-A UI framework using native CSS/JS replications of the Mac OS 8.1 interface components. The project is named after the interface theme that came with MacOS 8 and 9, Platinum.
-
-## Demo
-[`See a demo here!`](https://robbiebyrd.github.io/platinum/)
+# robbiebyrd.com
+My blog.
 
 ## Acknowledgements
+ - Platinum by ['Robbie Byrd'](https://github.com/robbiebyrd)
  - New Dawn by [`Nathanael Gentry`](https://github.com/npjg)
  - Scrollbars of the Classic Mac OS by [`Jessica Stokes (@ticky)`](https://github.com/ticky)
  - `after-dark-css`, for the basic System 7.1.1 interface
