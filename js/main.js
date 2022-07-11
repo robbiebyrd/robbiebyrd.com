@@ -26,8 +26,10 @@ function clickURL(url) {
 function updateBrowser(url) {
 	var display = document.querySelector("#internet .inner .inner-content");
 	var location = document.querySelector(".location_input input")
+	var location_status = document.querySelector(".netscape_footer label")
 	display.innerHTML = markdown(data[url]);
 	location.value = url;
+	location_status.innerHTML = url;
 }
 
 function move(p) {

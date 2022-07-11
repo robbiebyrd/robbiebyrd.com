@@ -29,8 +29,8 @@ function boot() {
     // Play the boot sound
     jQuery("#sound_boot").trigger("play");
     // Hide the button and overlay
-    jQuery("#boot-button").hide();
-    jQuery("#boot").hide();
+    jQuery("#boot").addClass("hidden");
+    jQuery("#boot-button").removeClass("hidden");
 }
 
 function clock() {
@@ -255,6 +255,12 @@ jQuery(function () {
 
     jQuery("#boot-button").click(function () {
         boot(this)
+        console.log("bootbutton")
+    });
+    jQuery("#shutdown_button").click(function () {
+        jQuery("#shutdown").addClass("hidden");
+        jQuery("#shutdown-confirm").removeClass("hidden");
+        jQuery("#boot").removeClass("hidden");
         console.log("bootbutton")
     });
 });

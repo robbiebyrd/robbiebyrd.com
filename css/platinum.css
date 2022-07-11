@@ -101,7 +101,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 45px;
+    width: 56px;
 }
 
 .titlebar.noleft ::before {
@@ -378,23 +378,6 @@ div.content.noscroll .inner {
 .text-center {
     text-align: center;
 }
-
-.modal {
-    height: 100%;
-    width: 100%;
-    background: #000;
-    z-index: 99999999;
-    position: absolute;
-    border-radius: 0 !important;
-}
-
-#boot-button {
-    left: 50%;
-    position: relative;
-    top: 50%;
-    height: 100px;
-}
-
 #controls {
     width: 25%;
 }
@@ -423,38 +406,57 @@ div.content.noscroll .inner {
     height: 500px;
 }
 
-.alert {
+.system-window {
   z-index: 99999998 !important;
-  border: 2px #dc5341 outset;
   margin: 10% auto;
   position: relative;
   width: 30% !important;
+
 }
 
-.alert .inner {
+.system-window .inner {
   padding-left: 100px;
   border: none;
   box-shadow: none;
   text-align: left;
   background-repeat: no-repeat;
   background-position: 20px 10px;
-  background-image: url(../img/alert_notice.png);
+
 }
 
-.alert .inner p {
+.alert {
+  border: 2px #dc5341 outset;
+}
+
+.system-window .inner p {
   margin: 0;
 }
 
-.alert-stop .inner {
+.alert .inner {
+  background-image: url(../img/alert_notice.png);
+}
+
+.shutdown .inner {
+  background-image: url(../img/shutdown.png);
+}
+
+.error .inner {
   background-image: url(../img/alert_stop.png);
 }
 
 #sadmac, #shutdown {
+    z-index: 99999999 !important;
+}
+
+.modal {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 99999999;
+    position: absolute;
+    border-radius: 0 !important;
+    display: block;
     text-align: center;
     padding: 15%;
-    z-index: 99999999 !important;
-    width: 100%;
-    height: 100%;
-    display: block;
     margin: 0;
 }
