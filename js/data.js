@@ -14,7 +14,7 @@ The project’s goal is to make it easy for educators and archivists to upload, 
 
 To that end, we’ll be releasing phases of the project over the coming months, in various stages of development. Our first project, the Stirling Engine, provides media conversion and compression, data analysis, metadata enhancement, stream packaging and archival, and is extensible through plugins.
 
-The Stirling Engine is meant to be a lightweight, efficient way to process incoming media files. The engine's main responsibilities are to:
+The [Stirling Engine](https://github.com/Keeping-History/stirling-engine) is meant to be a lightweight, efficient way to process incoming media files. The engine's main responsibilities are to:
 
 - Receive a JSON file with job options
 - Normalize uploaded media
