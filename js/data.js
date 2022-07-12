@@ -33,10 +33,22 @@ The next phase of our product will be the annotator, the Minto Engine. And, afte
 We also plan to provide consulting services for institutions that may want to implement the technology through a separate entity.
 
 ----`,
-"http://robbiebyrd.com/archive":
-`# Archive
-this is my archive yo`,
+"http://robbiebyrd.com/links":
+`#  Links
+- [The 9/11 Realtime Experience Kickstarter](https://www.kickstarter.com/projects/911realtime/the-9-11-realtime-experience)
+- [911realtime.org](https://911realtime.org)
+- My friends at [Hivelocity](https://www.hivelocity.net) for graciously hosting the 911realtime.org and our nearly 2 TBs of assets.
+- [Pantheon Systems](https://pantheon.io) where I work as an engineer.
+- [My LinkedIn](https://www.linkedin.com/in/atxrobbieb/)
+- [My Twitter](https://twitter.com/robbie_byrd)
+- [Space Hippo](https://www.linkedin.com/company/spacehippo) is my side-hustle for developing education and research tools
+- [KeepingHistory.org](https://github.com/Keeping-History) is a new project to take the tools developed by Space Hippo's team and my work on [911realtime.org](https://911realtime.org) into a tool to archive, annotate and explore multimedia for education and posterity.
+`,
 "http://www.aol.com":
 `# AOL
-# beeep beeep boop boooooopppppp`,
+![Dialing](https://c.tenor.com/AZ1HKdM9qKoAAAAC/aol-internet.gif)
+`,
+}
+
+var favorites = {
 }
