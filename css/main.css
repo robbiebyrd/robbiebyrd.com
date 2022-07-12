@@ -11,6 +11,10 @@
     height: calc(100vh - 340px);
 }
 
+#internet .inner * ul {
+    list-style: initial !important;
+}
+
 
 #netscape_toolbar {
     margin: 5px 5px 5px 5px; 
