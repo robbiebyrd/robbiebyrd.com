@@ -12,6 +12,12 @@ jQuery(function () {
 	jQuery(".back_button").on("click touch", function () {
 		move(-1)
 	});
+	jQuery("#resetIcons").on("click touch", function () {
+		resetDesktopIcons()
+	});
+	jQuery("#sortIcons").on("click touch", function () {
+		sortDesktopIcons()
+	});
 });
 
 function clickURL(url) {
@@ -37,4 +43,21 @@ function move(p) {
 		position = position + p
 		updateBrowser(history[position])
 	}
+}
+
+function resetDesktopIcons() {
+	jQuery(".icon").removeAttr("style")
+}
+
+function sortDesktopIcons() {
+	var mylist = $('#icon-holder');
+	var listitems = mylist.children('div').get();
+	listitems.sort(function(a, b) {
+		var compA = $(a).attr('id').toUpperCase();
+		var compB = $(b).attr('id').toUpperCase();
+		return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+	})
+	$.each(listitems, function(idx, itm) {
+		mylist.append(itm);
+	});
 }
