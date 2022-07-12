@@ -1,6 +1,7 @@
 var data = {
 "http://robbiebyrd.com/homepage":
-`#blog
+`
+#blog
 ---- 
 ##Introducing KeepingHistory.org
 ######Created July 11, 2022 at 10:39 PM
@@ -21,7 +22,8 @@ Currently, we’re using a tuned version of ffmpeg and a lot of fancy work in th
 Some of the experiments we’ve been running in house include plugins using machine learning for object detection, speaker recognition and facial identification. These plugins store the output of their processing, and can even improve their models and re-process data to improve accuracy.
 The next phase of our product will be the annotator, the Minto Engine. And, after that, we’ll roll out our SDK for building interactive multimedia applications.
 We also plan to provide consulting services for institutions that may want to implement the technology through a separate entity.
-----`,
+----
+`,
 "http://robbiebyrd.com/archive":
 `# Archive
 this is my archive yo`,
