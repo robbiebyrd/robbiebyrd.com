@@ -4,7 +4,7 @@ var data = {
 ---- 
 ## Introducing KeepingHistory.org
 ###### Created July 11, 2022 at 10:39 PM
-When I first started my project [ The 9/11 Realtime Experience ], I had no idea what I was getting myself into. I had almost none of the required expertise and skills to undertake the immense work of collecting, cataloging, indexing, scraping and converting nearly 2 terabytes of video and audio data. 
+When I first started my project [The 9/11 Realtime Experience](https://911realtime.org), I had no idea what I was getting myself into. I had almost none of the required expertise and skills to undertake the immense work of collecting, cataloging, indexing, scraping and converting nearly 2 terabytes of video and audio data. 
 
 Over time, I had to learn these skills through trial and error. What I learned was that there is a huge barrier to using multimedia to tell stories. It’s even harder to catalog, collect and store all that immense data. It’s damned near impossible to add any kind of real context to this media without a team of humans watching, tagging and clicking.
 
