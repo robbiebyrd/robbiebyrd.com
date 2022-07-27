@@ -22,7 +22,7 @@ jQuery(function() {
 		sortDesktopIcons();
 	});
 
-	var idleInterval = setInterval(timerIncrement, 10000); // 1 minute
+	var idleInterval = setInterval(timerIncrement, 300000); // 5 minutes
 
 	// Zero the idle timer on mouse movement.
 	$(this).mousemove(function(e) {
