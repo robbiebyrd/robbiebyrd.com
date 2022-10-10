@@ -2,6 +2,16 @@ var data = {
 "http://robbiebyrd.com/homepage":
 `# My Blog
 ---- 
+## KeepingHistory.org website is live!
+###### Created October 10, 2022 at 11:20 AM CT
+The website for my project [Keeping History](https://keepinghistory.org) is now live! 
+
+See our projects on Github:
+- [HistoryCommons.org](https://github.com/Keeping-History/historycommons) - Reviving the now defunct HistoryCommons.org website.
+- [Savery Engine](https://github.com/Keeping-History/savery) - A tool to rapidly annotate and enhance multimedia from an easy-to-use interface.
+- [Stirling Engine](https://github.com/Keeping-History/stirling) - Tool for media conversion and compression, data analysis, metadata enhancement, stream packaging and archival; extensible through plugins.
+- [ECU](https://github.com/Keeping-History/ecu) - The orchestration engine for running multiple Stirling Engine jobs.
+
 ## Introducing KeepingHistory.org
 ###### Created July 11, 2022 at 10:39 PM CT, Updated October 10, 2022 at 11:15 AM CT
 When I first started my project [The 9/11 Realtime Experience](https://911realtime.org), I had no idea what I was getting myself into. I had almost none of the required expertise and skills to undertake the immense work of collecting, cataloging, indexing, scraping and converting nearly 2 terabytes of video and audio data. 
