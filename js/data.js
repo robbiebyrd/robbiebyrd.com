@@ -3,7 +3,7 @@ var data = {
 `# My Blog
 ---- 
 ## Introducing KeepingHistory.org
-###### Created July 11, 2022 at 10:39 PM
+###### Created July 11, 2022 at 10:39 PM CT, Updated October 10, 2022 at 11:15 AM CT
 When I first started my project [The 9/11 Realtime Experience](https://911realtime.org), I had no idea what I was getting myself into. I had almost none of the required expertise and skills to undertake the immense work of collecting, cataloging, indexing, scraping and converting nearly 2 terabytes of video and audio data. 
 
 Over time, I had to learn these skills through trial and error. What I learned was that there is a huge barrier to using multimedia to tell stories. It’s even harder to catalog, collect and store all that immense data. It’s damned near impossible to add any kind of real context to this media without a team of humans watching, tagging and clicking.
@@ -28,21 +28,21 @@ Currently, we’re using a tuned version of ffmpeg and a lot of fancy work in th
 
 Some of the experiments we’ve been running in house include plugins using machine learning for object detection, speaker recognition and facial identification. These plugins store the output of their processing, and can even improve their models and re-process data to improve accuracy.
 
-The next phase of our product will be the annotator, the Minto Engine. And, after that, we’ll roll out our SDK for building interactive multimedia applications.
+The next phase of our product will be the annotator, the [Savery Engine](https://github.com/Keeping-History/savery). And, after that, we’ll roll out our SDK for building interactive multimedia applications.
 
 We also plan to provide consulting services for institutions that may want to implement the technology through a separate entity.
 
 ----`,
 "http://robbiebyrd.com/links":
 `#  Links
-- [The 9/11 Realtime Experience Kickstarter](https://www.kickstarter.com/projects/911realtime/the-9-11-realtime-experience)
-- [911realtime.org](https://911realtime.org)
+- 
+- [The 9/11 Realtime Experience: 911realtime.org](https://911realtime.org) (also see our [Kickstarter](https://www.kickstarter.com/projects/911realtime/the-9-11-realtime-experience))
 - My friends at [Hivelocity](https://www.hivelocity.net) for graciously hosting the 911realtime.org and our nearly 2 TBs of assets.
 - [Pantheon Systems](https://pantheon.io) where I work as an engineer.
 - [My LinkedIn](https://www.linkedin.com/in/atxrobbieb/)
 - [My Twitter](https://twitter.com/robbie_byrd)
-- [Space Hippo](https://www.linkedin.com/company/spacehippo) is my side-hustle for developing education and research tools
-- [KeepingHistory.org](https://github.com/Keeping-History) is a new project to take the tools developed by Space Hippo's team and my work on [911realtime.org](https://911realtime.org) into a tool to archive, annotate and explore multimedia for education and posterity.
+- [Space Hippo](https://spacehippo.com) is my side-hustle for developing education and research tools
+- [KeepingHistory.org](https://KeepingHistory.org) is a new project to take the tools developed by Space Hippo's team and my work on [911realtime.org](https://911realtime.org) into a tool to archive, annotate and explore multimedia for education and posterity.
 `,
 "http://www.aol.com":
 `# AOL
