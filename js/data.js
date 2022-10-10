@@ -45,7 +45,6 @@ We also plan to provide consulting services for institutions that may want to im
 ----`,
 "http://robbiebyrd.com/links":
 `#  Links
-- 
 - [The 9/11 Realtime Experience: 911realtime.org](https://911realtime.org) (also see our [Kickstarter](https://www.kickstarter.com/projects/911realtime/the-9-11-realtime-experience))
 - My friends at [Hivelocity](https://www.hivelocity.net) for graciously hosting the 911realtime.org and our nearly 2 TBs of assets.
 - [Pantheon Systems](https://pantheon.io) where I work as an engineer.
