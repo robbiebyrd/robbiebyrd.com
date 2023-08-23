@@ -57,6 +57,41 @@ We also plan to provide consulting services for institutions that may want to im
 `# AOL
 ![Dialing](https://c.tenor.com/AZ1HKdM9qKoAAAAC/aol-internet.gif)
 `,
+"system://about":
+`# About RobbieByrd.com
+====================
+
+This is my website, and I like it a lot.
+
+Based on **[Platinum](https://github.com/robbiebyrd/platinum)** by **[Me!!!](https://github.com/robbiebyrd)**.
+
+Based on **[New Dawn](https://github.com/npjg/classic.css)** by **[Nathanael Gentry](https://github.com/npjg)**.
+
+Based on **[Scrollbars of the Classic Mac OS](https://github.com/ticky/classic-scrollbars)** by *
+*[Jessica Stokes (@ticky)](https://github.com/ticky)**.
+
+* * *
+
+**New Dawn** and **Platinum** License
+
+MIT License  
+Copyright (c) 2019 Nathanael Gentry
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Apple maintains the copyright on the background patterns, icons and interface components. Some UI elements are from
+Netscape Navigator, and are the intellectual property of Yahoo and/or Microsoft (I think, I'm not really sure).`
 }
 
 var favorites = {

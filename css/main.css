@@ -6,7 +6,6 @@
     display: block;
     min-width: 350px;
     min-height: 200px;
-    height: calc(100% - 162px);
     width: calc(100vw - 162px);
     height: calc(100vh - 340px);
 }
@@ -17,7 +16,7 @@
 
 
 #netscape_toolbar {
-    margin: 5px 5px 5px 5px; 
+    margin: 5px 5px 5px 5px;
 }
 
 #netscape_toolbar .logo {
@@ -63,7 +62,7 @@
     -webkit-box-shadow: inset 1px 1px 0 #555, inset -1px -1px 0 #333, 0 2px 2px -3px #111;
 }
 
-.toolbar_button h6 { 
+.toolbar_button h6 {
     position: relative;
     top: 29px;
     font-size: .65em;
@@ -72,13 +71,12 @@
     text-align: center;
 }
 
-.toolbar_button.spacer { 
+.toolbar_button.spacer {
     width: 16px;
     border: none !important;
     background: none !important;
     box-shadow: none !important;
 }
-
 
 
 .back_button {
@@ -109,7 +107,7 @@
 
 .toolbar_location div {
     height: 100%;
-    float: left; 
+    float: left;
     display: flex;
     align-items: center
 }
@@ -119,11 +117,11 @@
     margin-right: 5px;
 }
 
-.toolbar_location .location_input  {
+.toolbar_location .location_input {
     width: calc(100% - 120px);
 }
 
-.toolbar_location .location_input input  {
+.toolbar_location .location_input input {
     width: 100%;
     border: 2px #666;
     border-style: inset;
