@@ -36,10 +36,10 @@ body {
     height: 22px;
 }
 
-
 .right-button {
-  float: right;
+    float: right;
 }
+
 .content .inner {
     margin: 2px 4px 4px;
     padding: 10px;
@@ -76,8 +76,8 @@ body {
 .hidden-window {
     height: 23px !important;
     overflow: hidden !important;
-    min-width: 0px;
-    min-height: 0px;
+    min-width: 0;
+    min-height: 0;
 }
 
 .icon img {
@@ -109,8 +109,8 @@ body {
 }
 
 .titlebar.noright {
-  width: calc(100% - 3px);
-  margin-right: 4px;
+    width: calc(100% - 3px);
+    margin-right: 4px;
 }
 
 .titlebar.noright ::after {
@@ -138,15 +138,13 @@ body {
 }
 
 .titlebar {
-    margin: 0;
-    margin-right: 3px;
-    margin-left: 1px;
+    margin: 0 3px 0 1px;
     width: 99%;
 }
 
 .visuallyhidden {
     border: 0;
-    clip: rect(0000);
+    clip: rect(0,0,0,0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -198,7 +196,7 @@ body {
 
 :root {
     --button-box-shadow: inset -1px -1px 0 0 #777, inset -2px -2px 0 0 #aaa,
-        inset 1px 1px 0 0 #ddd, inset 2px 2px 0 0 #fff;
+    inset 1px 1px 0 0 #ddd, inset 2px 2px 0 0 #fff;
     --button-hover-bezel: 0 0 0 1px #aaa, 0 0 0 2px #ddd, 0 0 0 3px #000;
 }
 
@@ -248,7 +246,7 @@ body {
 .content button:active {
     background-color: #666;
     box-shadow: var(--button-hover-bezel), inset -1px -1px 0 0 #888,
-        inset -2px -2px 0 0 #777, inset 1px 1px 0 0 #444, inset 2px 2px 0 0 #555;
+    inset -2px -2px 0 0 #777, inset 1px 1px 0 0 #444, inset 2px 2px 0 0 #555;
     color: #fff;
 }
 
@@ -260,7 +258,7 @@ body {
     background-color: #ddd;
     border: 1px solid #111;
     box-shadow: -1px -1px 0 0 #999, 1px 1px 0 0 #fff, inset 1px 1px 0 0 #fff,
-        inset -1px -1px 0 0 #999;
+    inset -1px -1px 0 0 #999;
 }
 
 .content ul {
@@ -283,14 +281,14 @@ body {
 
 .control-box-inner {
     background: linear-gradient(
-        tobottomright,
-        #999,
-        #aaa,
-        #bbb,
-        #ccc,
-        #ddd,
-        #eee,
-        #fff
+            tobottomright,
+            #999,
+            #aaa,
+            #bbb,
+            #ccc,
+            #ddd,
+            #eee,
+            #fff
     );
     border: 1px solid #222;
     box-shadow: inset 1px 1px 0 0 #ccc, inset -1px -1px 0 0 #888;
@@ -378,6 +376,7 @@ div.content.noscroll .inner {
 .text-center {
     text-align: center;
 }
+
 #controls {
     width: 25%;
 }
@@ -397,51 +396,53 @@ div.content.noscroll .inner {
     min-height: 80px;
     min-width: 100px;
 }
+
 #about .inner {
     left: 20px;
     top: 30px;
 }
+
 #about .inner {
     width: 700px;
     height: 500px;
 }
 
 .system-window {
-  z-index: 99999998 !important;
-  margin: 10% auto;
-  position: relative;
-  width: 30% !important;
+    z-index: 99999998 !important;
+    margin: 10% auto;
+    position: relative;
+    width: 30% !important;
 
 }
 
 .system-window .inner {
-  padding-left: 100px;
-  border: none;
-  box-shadow: none;
-  text-align: left;
-  background-repeat: no-repeat;
-  background-position: 20px 10px;
+    padding-left: 100px;
+    border: none;
+    box-shadow: none;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position: 20px 10px;
 
 }
 
 .alert {
-  border: 2px #dc5341 outset;
+    border: 2px #dc5341 outset;
 }
 
 .system-window .inner p {
-  margin: 0;
+    margin: 0;
 }
 
 .alert .inner {
-  background-image: url(../img/alert_notice.png);
+    background-image: url(../img/alert_notice.png);
 }
 
 .shutdown .inner {
-  background-image: url(../img/shutdown.png);
+    background-image: url(../img/shutdown.png);
 }
 
 .error .inner {
-  background-image: url(../img/alert_stop.png);
+    background-image: url(../img/alert_stop.png);
 }
 
 #sadmac, #shutdown {

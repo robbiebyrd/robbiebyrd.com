@@ -42,21 +42,21 @@ function clock() {
 }
 
 function enableAppMenu() {
-    jQuery(".draggable-window.content:not('.hidden')").each(function() {
-        jQuery( "<li id='appmenu-" + jQuery(this).attr('id') + "'><img src='" + jQuery(this).data("window-icon") + "' />" + jQuery(this).data("window-name") + "</li>" ).appendTo( "#application-switcher" );
-      });
+    jQuery(".draggable-window.content:not('.hidden')").each(function () {
+        jQuery("<li id='appmenu-" + jQuery(this).attr('id') + "'><img src='" + jQuery(this).data("window-icon") + "' />" + jQuery(this).data("window-name") + "</li>").appendTo("#application-switcher");
+    });
 }
 
 function updateAppMenu() {
     jQuery("#application-switcher").empty()
     enableAppMenu()
-    var index_highest = 0;   
+    var index_highest = 0;
     // more effective to have a class for the div you want to search and 
     // pass that to your selector
-    $(".content").each(function() {
+    $(".content").each(function () {
         // always use a radix when using parseInt
         var index_current = parseInt($(this).css("zIndex"), 10);
-        if(index_current > index_highest) {
+        if (index_current > index_highest) {
             index_highest = index_current;
         }
     });
@@ -91,10 +91,18 @@ function enableWindowResize() {
     // Make windows resizable
     jQuery(".resizable .inner").resizable({
         handles: "se",
+        start: function (event, ui) {
+            jQuery(this).parent().css("opacity", "0.5");
+            jQuery(this).parent().addClass("ui-draggable-dragging");
+        },
         stop: function (event, ui) {
             jQuery("#sound_move_stop").trigger("play");
+            jQuery(this).parent().css("opacity", "1");
+            jQuery(this).parent().removeClass("ui-draggable-dragging");
         },
-        resize: function( event, ui ) {console.log(event, ui)}
+        resize: function (event, ui) {
+            console.log(event, ui)
+        }
 
     });
 }
@@ -187,21 +195,18 @@ function enableWindowClose() {
 function enableNav() {
     jQuery(".nav-list li, #application-switcher li").on("mouseenter click touch", function () {
         jQuery(this).children().show();
-    });
-
-    jQuery(".nav-list li, #application-switcher li").on("mouseleave click touch", function () {
+    }).on("mouseleave click touch", function () {
         jQuery(this).children("ul").hide();
     });
 
     // Enable menu items to be clickable by default and open a windows/app with the same name
     jQuery(".nav-list li, #apple-menu li").on("click", function () {
-        console.log(this);
         if (!jQuery(this).hasClass("disabled")) {
             jQuery("#sound_window_open").trigger("play");
             jQuery("#" + jQuery(this).get(0).id.split("-")[1])
                 .removeClass("hidden")
                 .css("z-index", "9000");
-            updateAppMenu()
+            updateAppMenu();
         }
     });
 
@@ -242,16 +247,16 @@ function enableWindowOrder() {
 
 jQuery(function () {
 
-    clock()
-    enableWindowDrag()
-    enableWindowResize()
-    enableWindowClose()
-    enableWindowOrder()
-    enableNav()
-    enableWindowZoom()
-    enableDesktopIcons()
-    enableWindowCollapse()
-    enableAppMenu()
+    clock();
+    enableWindowDrag();
+    enableWindowResize();
+    enableWindowClose();
+    enableWindowOrder();
+    enableNav();
+    enableWindowZoom();
+    enableDesktopIcons();
+    enableWindowCollapse();
+    enableAppMenu();
 
     jQuery("#boot-button").click(function () {
         boot(this)
