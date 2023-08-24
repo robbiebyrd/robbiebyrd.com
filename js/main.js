@@ -113,7 +113,6 @@ function updateBrowser(url) {
     );
     jQuery('.inner-content a').click(
         function() {
-            console.log(this.href);
             clickURL(this.href);
             return false;
         }

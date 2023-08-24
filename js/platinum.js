@@ -100,9 +100,6 @@ function enableWindowResize() {
             jQuery(this).parent().css("opacity", "1");
             jQuery(this).parent().removeClass("ui-draggable-dragging");
         },
-        resize: function (event, ui) {
-            console.log(event, ui)
-        }
 
     });
 }
@@ -110,11 +107,9 @@ function enableWindowResize() {
 function enableWindowZoom() {
     // Zoom Box -- Make Window Full Screen and toggle back
     jQuery(".zoom-box").on("click", function () {
-        console.log(jQuery(this))
         b = this.closest(".content");
         isMax = jQuery(this).data("max");
         i = jQuery(b).children(".inner");
-        console.log(i);
         if (!isMax) {
             jQuery(i)
                 .css("width", "95vw")
@@ -260,12 +255,10 @@ jQuery(function () {
 
     jQuery("#boot-button").click(function () {
         boot(this)
-        console.log("bootbutton")
     });
     jQuery("#shutdown_button").click(function () {
         jQuery("#shutdown").addClass("hidden");
         jQuery("#shutdown-confirm").removeClass("hidden");
         jQuery("#boot").removeClass("hidden");
-        console.log("bootbutton")
     });
 });
