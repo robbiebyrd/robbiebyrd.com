@@ -80,7 +80,7 @@ function updateBrowser(url) {
     var display = '#internet .inner .inner-content';
     var location = '.location_input input';
     var location_status = '.netscape_footer label';
-    var browserProxyURL = 'http://theoldnet.com/get?year=2001&noscripts=true&decode=true&url='
+    var browserProxyURL = 'https://theoldnet.com/get?year=2001&noscripts=true&decode=true&url='
     if (url in data) {
         jQuery(display).html(markdown(data[url]));
         jQuery(location).val(url);
