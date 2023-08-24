@@ -15,6 +15,9 @@ jQuery(function () {
     jQuery('.back_button').on('click touch', function () {
         move(-1);
     });
+    jQuery('.home_button').on('click touch', function () {
+        updateBrowser('http://robbiebyrd.com/homepage');
+    });
     jQuery('#resetIcons').on('click touch', function () {
         resetDesktopIcons();
     });
@@ -37,6 +40,31 @@ jQuery(function () {
     for (const [key, value] of Object.entries(static_windows)) {
         jQuery("#" + key).html(value);
     }
+
+    // This is a test
+    jQuery( document ).on( "ajaxStart", function() {
+        var a = jQuery("div.logo.toolbar_button > img");
+        a.attr("src", "img/netscape/status.gif");
+    });
+    jQuery( document ).on( "ajaxStop", function() {
+        var a = jQuery("div.logo.toolbar_button > img");
+        a.attr("src", "img/netscape/icon.png");
+    });
+
+    jQuery("div.location_go button.go_button").on("click touch", function() {
+        clickURL(jQuery(".location_input input").val());
+    });
+
+    jQuery('.location_input input').bind("enterKey",function(e){
+        clickURL(jQuery(this).val());
+    });
+    jQuery('.location_input input').keyup(function(e){
+        if(e.keyCode == 13)
+        {
+            jQuery(this).trigger("enterKey");
+        }
+    });
+
 });
 
 function clickURL(url) {
@@ -49,12 +77,48 @@ function clickURL(url) {
 }
 
 function updateBrowser(url) {
-    var display = document.querySelector('#internet .inner .inner-content');
-    var location = document.querySelector('.location_input input');
-    var location_status = document.querySelector('.netscape_footer label');
-    display.innerHTML = markdown(data[url]);
-    location.value = url;
-    location_status.innerHTML = url;
+    var display = '#internet .inner .inner-content';
+    var location = '.location_input input';
+    var location_status = '.netscape_footer label';
+    var browserProxyURL = 'http://theoldnet.com/get?year=2001&noscripts=true&decode=true&url='
+    if (url in data) {
+        jQuery(display).html(markdown(data[url]));
+        jQuery(location).val(url);
+        jQuery(location_status).html(url);
+    } else if (url.startsWith('http://') || url.startsWith('https://')) {
+        var strippedURL = url.replace(/^https?:\/\//, '');
+        var loadURL = browserProxyURL + strippedURL;
+        jQuery(display).load(loadURL, function () {
+            jQuery(display).find("a").attr("href", function(index, href) {
+                return browserProxyURL + href.replace(/^https?:\/\//, '');
+            });
+            jQuery(location_status).html(url);
+        });
+        jQuery(location).val(url);
+        jQuery(location_status).html("Loading " + url + "...");
+    } else {
+        jQuery(display).html("<h1>404</h1><p>Page not found</p>");
+        jQuery(location).val(url);
+        jQuery(location_status).html(url);
+    }
+    jQuery('.inner-content a').hover(
+        function() {
+            var location_status = '.netscape_footer label';
+            jQuery(location_status).attr("data-oldref", jQuery(location_status).html())
+            jQuery(location_status).html(this.href);
+        }, function() {
+            var location_status = '.netscape_footer label';
+            jQuery(location_status).html(jQuery(location_status).attr("data-oldref"));
+        }
+    );
+    jQuery('.inner-content a').click(
+        function() {
+            console.log(this.href);
+            clickURL(this.href);
+            return false;
+        }
+    );
+
 }
 
 function move(p) {
