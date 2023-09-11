@@ -3,6 +3,17 @@ var data = {
 `# My Blog
 ---- 
 
+## [911realtime.org](https://911realtime.org) data transfer
+###### Created September 11, 2023 at 1:15 PM CT
+
+As they have for the last 2 years, I wake up early on September 11 to monitor the traffic to [911realtime.org](https://911realtime.org), which as you might imagine, spikes significantly. I like to keep track of it each year, and thought I'd share this year's traffic statistics.
+
+1:08 pm: 2TB out today, avg. 1 GBps transfer rate. 
+
+As always, I want to give a huge thank you to [Hivelocity](http://hivelocity.net/) for their continued support and contributions to keeping history alive.
+
+If you'd like to get involved, please visit my project [Keeping History[(keepinghistory.org).
+
 ## Creating a thermostat test rig
 ###### Created August 24, 2023 at 9:20 AM CT
 
