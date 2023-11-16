@@ -1,0 +1,329 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  row-gap: 0;
+  column-gap: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body > footer {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template: 1/3;
+  width: 100%;
+  z-index: 60;
+  padding: 1em 0;
+  padding-bottom: 2em;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 100px;
+  grid-template: 1/3;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  width: 100%;
+  z-index: 60;
+  padding: 0;
+  transition: linear 0.5s;
+}
+header.overlay {
+  position: fixed;
+}
+
+section {
+  scroll-snap-align: start;
+}
+section * {
+  z-index: 8;
+}
+section.spacer {
+  height: 100vh;
+}
+section.grid-main {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr) repeat(4, 2fr) repeat(2, 1fr);
+  grid-area: 1/1/2/2;
+  min-height: 100vh;
+  clear: both;
+}
+section.grid-main div.grid-layout-1 {
+  grid-area: 3/2/8/8;
+  display: inline-block;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+section.grid-main div.grid-layout-1-alt {
+  grid-area: 2/2/8/8;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+section.grid-main div.grid-layout-1-right {
+  grid-area: 3/4/7/8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section.grid-main div.grid-layout-2 {
+  grid-area: 2/2/8/8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+section.grid-main div.grid-layout-3 {
+  grid-area: 4/6/7/8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+section.grid-main div.grid-layout-4 {
+  grid-area: 6/5/8/9;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 2vh 2vw;
+}
+section.grid-main div.grid-layout-5 {
+  grid-area: 4/2/4/8;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+section.grid-main div.grid-layout-6 {
+  grid-area: 4/2/5/8;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+section.grid-main div.grid-layout-7 {
+  grid-area: 5/2/7/8;
+}
+section.grid-main div.grid-layout-8 {
+  grid-area: 4/2/9/8;
+}
+section.grid-main div.grid-layout-9 {
+  grid-area: 5/4/8/8;
+}
+section.grid-main div.grid-layout-10 {
+  grid-area: 2/2/8/3;
+}
+section.grid-main div.grid-layout-11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-area: 1/4/8/9;
+  margin: 0 5vw;
+}
+section.grid-main div.grid-layout-12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: 2/7/8/8;
+}
+section.grid-main div.grid-layout-13 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: 2/2/8/6;
+}
+section.grid-main div.grid-layout-14 {
+  grid-area: 3/6/8/9;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.grid-main div.grid-layout-15 {
+  grid-area: 2/3/8/7;
+}
+section.grid-main div.grid-layout-16 {
+  grid-area: 2/2/8/8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.grid-main div.grid-layout-17 {
+  grid-area: 2/7/8/8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.grid-main div.grid-layout-temp {
+  grid-area: 2/2/8/8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.grid-main div.grid-layout-all {
+  grid-area: 1/1/8/8;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+section.grid-main div.grid-layout-almost-all-1 {
+  grid-area: 3/2/4/8;
+}
+section.grid-main div.grid-layout-almost-all-2 {
+  grid-area: 4/2/7/8;
+}
+
+.col-1 {
+  columns: 1;
+  -webkit-columns: 1;
+  -moz-columns: 1;
+}
+
+.col-2 {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.col-3 {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
+.col-4 {
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+}
+
+.col-5 {
+  columns: 5;
+  -webkit-columns: 5;
+  -moz-columns: 5;
+}
+
+.col-6 {
+  columns: 6;
+  -webkit-columns: 6;
+  -moz-columns: 6;
+}
+
+.col-7 {
+  columns: 7;
+  -webkit-columns: 7;
+  -moz-columns: 7;
+}
+
+.col-8 {
+  columns: 8;
+  -webkit-columns: 8;
+  -moz-columns: 8;
+}
+
+.col-9 {
+  columns: 9;
+  -webkit-columns: 9;
+  -moz-columns: 9;
+}
+
+.col-10 {
+  columns: 10;
+  -webkit-columns: 10;
+  -moz-columns: 10;
+}
+
+.pct-5 {
+  width: 5%;
+}
+
+.pct-10 {
+  width: 10%;
+}
+
+.pct-15 {
+  width: 15%;
+}
+
+.pct-20 {
+  width: 20%;
+}
+
+.pct-25 {
+  width: 25%;
+}
+
+.pct-30 {
+  width: 30%;
+}
+
+.pct-35 {
+  width: 35%;
+}
+
+.pct-40 {
+  width: 40%;
+}
+
+.pct-45 {
+  width: 45%;
+}
+
+.pct-50 {
+  width: 50%;
+}
+
+.pct-55 {
+  width: 55%;
+}
+
+.pct-60 {
+  width: 60%;
+}
+
+.pct-65 {
+  width: 65%;
+}
+
+.pct-70 {
+  width: 70%;
+}
+
+.pct-75 {
+  width: 75%;
+}
+
+.pct-80 {
+  width: 80%;
+}
+
+.pct-85 {
+  width: 85%;
+}
+
+.pct-90 {
+  width: 90%;
+}
+
+.pct-95 {
+  width: 95%;
+}
+
+.pct-100 {
+  width: 100%;
+}
+
+/*# sourceMappingURL=structure.css.map */

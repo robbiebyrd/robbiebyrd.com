@@ -1,0 +1,95 @@
+@use "sass:map";
+@use "sass:math";
+@use "functions";
+@use "colors";
+@use "helpers";
+@use "typography";
+@use "vectors";
+
+
+/**
+ * @atom Horizontal Rule
+ * @section Other
+ * @description
+ *  A horizontal rule.
+ * @modifiers
+ *  .{color}-dark
+ *  .{color}-light
+ *  .wide 95% Width
+ *  .short 50% Width
+ *  .tight  Removes margin
+ * @markup
+ *  <p>For over 20 years, our experts have been planning and engineering successful launches for businesses from small-to-large.</p>
+ *  <hr class="mercurius-dark">
+ *  <p>Our custom approach to mission planning, along with careful and consistent delivery, will lift your digital presence into the stratosphere.</h6>
+ */
+hr {
+  border-color: colors.$color-tethys-light;
+  width: 70%;
+  margin-bottom: 3em;
+  margin-top: 3em;
+
+  &.full {
+    width: 100%;
+  }
+
+  &.wide {
+    width: 95%;
+  }
+
+  &.short {
+    width: 45%;
+  }
+
+  &.tight {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  @each $color in map.keys(colors.$colors) {
+    &.#{$color}-dark {
+      border-color: map.get(map.get(colors.$colors, $color), "dark");
+    }
+    &.#{$color}-light {
+      border-color: map.get(map.get(colors.$colors, $color), "light");
+    }
+  }
+}
+
+aside {
+  z-index: 12;
+  @each $color in map.keys(colors.$colors) {
+    &.color-#{$color} {
+      $light-color: map.get(map.get(colors.$colors, $color), "light");
+      $dark-color: map.get(map.get(colors.$colors, $color), "dark");
+      border: 1px solid;
+
+      &-dark {
+        box-shadow: inset math.div(typography.$font-tiny, 2) math.div(typography.$font-tiny, 2) $light-color,
+        math.div(typography.$font-tiny, 2) math.div(typography.$font-tiny, 2) $light-color;
+        background-color: $dark-color;
+        color: $light-color;
+        border: math.div(typography.$font-tiny, 2) $dark-color;
+
+        &.translucent {
+            background-color: rgba($dark-color, .5);
+        }
+      }
+
+      &,
+      &-light {
+        box-shadow: inset math.div(typography.$font-tiny, 2) math.div(typography.$font-tiny, 2) $dark-color,
+        math.div(typography.$font-tiny, 2) math.div(typography.$font-tiny, 2) $dark-color;
+        background-color: $light-color;
+        color: $dark-color;
+        border: math.div(typography.$font-tiny, 2) $light-color;
+
+
+        &.translucent {
+            background-color: rgba($light-color, .5);
+        }
+
+      }
+    }
+  }
+}

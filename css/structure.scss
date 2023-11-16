@@ -1,0 +1,302 @@
+@use "colors";
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  row-gap: 0;
+  column-gap: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body > footer {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 10vh;
+  grid-template: 1 / 3;
+  padding: 2em 0;
+  //position: absolute;
+  //bottom: 0;
+}
+
+main {
+}
+
+header {
+  margin: 0;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  padding: 0;
+  position: fixed;
+}
+
+#logo {
+  aspect-ratio: 1 / 2 !important;
+  opacity: 0;
+  width: auto;
+  height: 10vh;
+  margin: 0;
+  padding: .25em;
+  filter: drop-shadow(0 0 10px white);
+  animation: inherit;
+  position: absolute;
+}
+
+#headersss {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  opacity: 0;
+  color: colors.$color-dark;
+  fill: colors.$color-dark;
+  justify-content: space-between;
+  backdrop-filter: brightness(100%) saturate(110%) contrast(150%);
+  padding: 1vh 1vw;
+  height: 20vh;
+  -webkit-mask-image: radial-gradient(20vh circle at 0% -10%, black 50%, transparent 100%);
+  z-index: 15;
+}
+
+// duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name
+.header-animation {
+  animation: .5s flash-animation-bg 0s ease-out forwards, 5s header-animation-keyframes-2 1s ease-in-out 1 forwards;
+}
+
+.flash-bg {
+  animation: .5s flash-animation-bg 0s ease-out forwards;
+}
+
+@keyframes flash-animation-bg {
+  from {
+    background: #ff9393;
+  }
+  to {
+    background: none
+  }
+}
+
+@keyframes header-animation-keyframes-2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+section {
+  scroll-snap-align: start;
+  position: relative;
+
+  &.spacer {
+    height: 100vh;
+  }
+
+  &.grid-full-height {
+    height: 100% !important;
+    min-height: 80vh;
+  }
+
+  &.grid-larger {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr) repeat(4, 2fr) repeat(2, 1fr);
+    height: 100vh;
+    width: 100vw;
+
+  }
+
+  &.grid-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 100vh;
+    width: 100vw;
+
+    div.grid-layout-1 {
+      grid-area: 3 / 2 / 8 / 8;
+      display: inline-block;
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    div.grid-layout-1-alt {
+      grid-area: 3/1/8/5;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+
+    }
+
+    div.grid-layout-1-right {
+      grid-area: 3/ 4 / 7 / 8;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    div.grid-layout-2 {
+      grid-area: 2 / 2 / 8 / 8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    div.grid-layout-3 {
+      grid-area: 4 / 6 / 7 / 8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    div.grid-layout-4 {
+      grid-area: 6 / 5 / 8 / 9;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin: 2vh 2vw;
+    }
+
+    div.grid-layout-5 {
+      grid-area: 4 / 2 / 4 / 8;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    div.grid-layout-6 {
+      grid-area: 4 / 2 / 5 / 8;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    div.grid-layout-7 {
+      grid-area: 5 / 2 / 7 / 8;
+    }
+
+    div.grid-layout-8 {
+      grid-area: 4 / 2 / 9 / 8;
+    }
+
+    div.grid-layout-9 {
+      grid-area: 5/4/8/8;
+    }
+
+    div.grid-layout-10 {
+      grid-area: 2 / 2 / 8 / 3;
+    }
+
+    div.grid-layout-11 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      grid-area: 1/4/8/9;
+      margin: 0 5vw;
+
+    }
+
+    div.grid-layout-12 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-area: 2 / 7 / 8 / 8;
+    }
+
+    div.grid-layout-13 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-area: 2 / 2 / 8 / 6;
+    }
+
+    div.grid-layout-14 {
+      grid-area: 3/6/8/9;
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    div.grid-layout-15 {
+      grid-area: 2/3/8/7;
+    }
+
+    div.grid-layout-16 {
+      grid-area: 2/2/8/8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    div.grid-layout-17 {
+      grid-area: 2/7/8/8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    div.grid-layout-temp {
+      grid-area: 2/2/8/8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    div.grid-layout-all {
+      grid-area: 1 / 1 / 8 / 8;
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-start;
+      align-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    div.grid-layout-almost-all-1 {
+      grid-area: 3/2/4/8;
+    }
+
+    div.grid-layout-almost-all-2 {
+      grid-area: 4 / 2 / 7 / 8;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .col-#{$i} {
+    columns: #{$i};
+    -webkit-columns: #{$i};
+    -moz-columns: #{$i};
+  }
+}
+
+@for $i from 1 through 20 {
+  .pct-#{$i * 5} {
+    width: $i * 5%;
+  }
+}
+
+#footer-list ul li {
+  float: left;
+  list-style: none;
+  margin-right: 2em;
+  padding: 0;
+}

@@ -1,0 +1,232 @@
+@use "helpers";
+
+.timeline {
+  font-family: $subheader-font;
+  align-items: baseline !important;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 80%;
+  position: relative;
+
+  @include helpers.responsive() {
+    left: 0;
+    margin: 0;
+    }
+
+  &__content {
+    padding: 0 1em;
+
+    h3, h4 {
+        margin: .5em 0;
+    }
+
+    &-title {
+      margin-bottom: 0;
+
+    }
+
+    ul {
+      margin-left: 0;
+      padding-left: 1em;
+    }
+
+    &-desc {
+    }
+  }
+
+  &:before {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    margin-left: -2px;
+    content: "";
+    background: linear-gradient(0deg, black 50%, #ff9393 51%, black 52%);
+    background-size: 400% 400%;
+    animation: 3s timeline-middle-line-animate 2s ease-out forwards infinite;
+    @include helpers.responsive() {
+      display: none !important;
+    }
+  }
+
+  &-item {
+    width: 50%;
+    display: flex;
+    position: relative;
+    margin: 2em 0 !important;
+    align-items: flex-start;
+
+    ul.tags {
+      width: 75%;}
+
+    &:before {
+      position: absolute;
+      top: 25%;
+      background-size: contain !important;
+      left: calc(100% - 4px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: calc(100% - 2em);
+      height: 6em;
+      background: var(--bg-image) no-repeat center center;
+      border-left: 8px solid var(--color);
+      border-right: none;
+      color: $color-dark;
+      content: attr(data-text);
+      padding: 1em;
+      box-shadow: -5px 0 2px -4px $color-dark;
+        @include helpers.responsive() {
+        box-shadow: none !important;
+      }
+
+    }
+
+    &:nth-child(even) {
+      align-self: flex-end;
+      position: relative;
+      left: 4em;
+      padding-left: 4em;
+
+      @include helpers.responsive() {
+        align-self: flex-start !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        left: 0 !important;
+      }
+
+      &:before {
+        box-shadow: 5px 0 2px -4px $color-dark;
+        left: calc(-100% - 4px);
+        padding: 1em;
+        align-items: flex-end;
+        border-right: 8px solid var(--color);
+        border-left: none;
+      }
+    }
+
+    &.smaller {
+      text-align: left;
+      width: 25%;
+      padding-left: calc(25% - 4em);
+      padding-right: 4em;
+      align-self: flex-start;
+
+      @include helpers.responsive() {
+        width: 100% !important;
+      }
+
+      &:before {
+        height: 1em;
+        width: 50%;
+      }
+
+      &:nth-child(even) {
+        text-align: left;
+        width: 25%;
+        align-self: flex-start;
+        padding: 0;
+        left: 50%;
+        @include helpers.responsive() {
+            width: 100% !important;
+        }
+
+        &:before {
+          padding: 1em;
+          width: 100%;
+          margin-left: -2em;
+          left: calc(-100% - 4px);
+        }
+
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 0;
+      }
+
+      h3, h4 {
+        margin-bottom: 0;
+        margin-top: .5em;
+      }
+
+      ul.tags {
+        float: right;
+        width: 100%;
+        margin-top: 0;
+
+        &:before {
+          content: '';
+        }
+      }
+    }
+
+    @include helpers.responsive() {
+      width: 100%;
+      margin-left: 4em !important;
+      justify-content: flex-start;
+
+      &-container {
+        margin: 0;
+        padding: 0;
+      }
+
+      &:before {
+        left: 0px !important;
+        text-align: center !important;
+        width: 1em !important;
+        border: none !important;
+        margin-left: -3em !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: self-end !important;
+        height: 8em !important;
+        background: var(--bg-image) no-repeat center center !important;
+        background-size: contain !important;
+      }
+
+      &:nth-child(even) {
+      margin-left: 4em !important;
+
+        &:before {
+        left: 0px !important;
+        text-align: center !important;
+        width: 1em !important;
+        border: none !important;
+        margin-left: -3em !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: self-end !important;
+        height: 8em !important;
+        background: var(--bg-image) no-repeat center center !important;
+        background-size: contain !important;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 40px;
+      }
+    }
+
+  }
+
+  &-container {
+    width: 100%;
+    position: relative;
+    transition: .3s ease 0s;
+    background-attachment: fixed;
+    background-size: cover;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+    }
+  }
+}
+
