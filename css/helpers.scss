@@ -1,0 +1,29 @@
+@mixin no-margin() {
+  margin: 0;
+}
+
+@mixin no-padding() {
+  padding: 0;
+}
+
+@mixin no-margin-no-padding() {
+  @include no-margin;
+  @include no-padding;
+}
+
+@mixin no-border() {
+  border: none;
+}
+
+@mixin force-center-div() {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@mixin responsive() {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}

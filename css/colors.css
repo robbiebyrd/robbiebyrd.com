@@ -1,0 +1,3302 @@
+/**
+ * Black
+ *
+ * @color
+ * @section Base Colors
+ */
+/**
+ * Bright
+ *
+ * @color
+ * @section Base Colors
+ */
+/**
+ * Tethys Light
+ *
+ * @color
+ * @section Base Colors
+ */
+/**
+ * Tethys Dark
+ *
+ * @color
+ * @section Base Colors
+ */
+/**
+ * Giove
+ *
+ * @color
+ * @section Base Colors
+ */
+/**
+ * Dark Venere
+ *
+ * @color
+ * @section Dark Colors
+ */
+/**
+ * Light Venere
+ *
+ * @color
+ * @section Light Colors
+ */
+/**
+ * Dark Green
+ *
+ * @color
+ * @section Dark Colors
+ */
+/**
+ * Light Green
+ *
+ * @color
+ * @section Light Colors
+ */
+/**
+ * Dark Purple
+ *
+ * @color
+ * @section Dark Colors
+ */
+/**
+ * Light Purple
+ *
+ * @color
+ * @section Light Colors
+ */
+/**
+ * Dark Red
+ *
+ * @color
+ * @section Dark Colors
+ */
+/**
+ * Light Red
+ *
+ * @color
+ * @section Light Colors
+ */
+/**
+ * Dark Yellow
+ *
+ * @color
+ * @section Dark Colors
+ */
+/**
+ * Light Yellow
+ *
+ * @color
+ * @section Light Colors
+ */
+/**
+ * Create a light rainbow gradient
+ *
+ * @mixin
+ * @section Colors
+ * @param $property Either 'background' or 'color'
+ * @param $angle The angle of the gradient
+ * @example
+ *  @include color-gradient-rainbow-light(background, 30);
+ *  @include color-gradient-rainbow-light(color, 95);
+ */
+/**
+ * Create a dark rainbow gradient
+ *
+ * @mixin
+ * @section Colors
+ * @param $property Either 'background' or 'color'
+ * @param $angle The angle of the gradient
+ * @example
+ *  @include color-gradient-rainbow-light(background, 30);
+ *  @include color-gradient-rainbow-light(color, 95);
+ */
+/**
+ * Apply color gradient styles to a selector.
+ *
+ * @mixin
+ * @section Colors
+ * @param $attribute This is either 'background' or 'color'
+ * @param $prefix Class name prefix from root
+ * @param $separator separator between items
+ * @example
+ *  @include color-gradient-modifiers;
+ */
+/**
+ * Apply color styles to a selector.
+ *
+ * @mixin
+ * @section Colors
+ * @param $attribute Either 'background' or 'color'
+ * @param $separator The character to separate words
+ * @example
+ *  .text {
+ *    @include color-modifiers('color', '-', '-');
+ *  }
+
+ */
+/**
+ * Used when applying a gradient to text
+ *
+ * @mixin
+ * @section Colors
+ * @example
+ *  @include clip-text-background;
+ */
+.color-dark-dark {
+  color: #202020;
+}
+.color-dark-light {
+  color: #404040;
+}
+.color-bright-dark {
+  color: #78909c;
+}
+.color-bright-light {
+  color: #9c9c9c;
+}
+.color-medium-dark {
+  color: #404040;
+}
+.color-medium-light {
+  color: #78909c;
+}
+.color-light-dark {
+  color: #78909c;
+}
+.color-light-light {
+  color: white;
+}
+.color-mercurius-dark {
+  color: #c0392b;
+}
+.color-mercurius-light {
+  color: #e57373;
+}
+.color-sol-dark {
+  color: #a8601a;
+}
+.color-sol-light {
+  color: #e5c07b;
+}
+.color-terra-dark {
+  color: #2e7d32;
+}
+.color-terra-light {
+  color: #8bc34a;
+}
+.color-venere-dark {
+  color: #1565c0;
+}
+.color-venere-light {
+  color: #40c4ff;
+}
+.color-neptunius-dark {
+  color: #9c00b0;
+}
+.color-neptunius-light {
+  color: #ea80fc;
+}
+
+.fill-dark-dark {
+  fill: #202020;
+}
+.fill-dark-light {
+  fill: #404040;
+}
+.fill-bright-dark {
+  fill: #78909c;
+}
+.fill-bright-light {
+  fill: #9c9c9c;
+}
+.fill-medium-dark {
+  fill: #404040;
+}
+.fill-medium-light {
+  fill: #78909c;
+}
+.fill-light-dark {
+  fill: #78909c;
+}
+.fill-light-light {
+  fill: white;
+}
+.fill-mercurius-dark {
+  fill: #c0392b;
+}
+.fill-mercurius-light {
+  fill: #e57373;
+}
+.fill-sol-dark {
+  fill: #a8601a;
+}
+.fill-sol-light {
+  fill: #e5c07b;
+}
+.fill-terra-dark {
+  fill: #2e7d32;
+}
+.fill-terra-light {
+  fill: #8bc34a;
+}
+.fill-venere-dark {
+  fill: #1565c0;
+}
+.fill-venere-light {
+  fill: #40c4ff;
+}
+.fill-neptunius-dark {
+  fill: #9c00b0;
+}
+.fill-neptunius-light {
+  fill: #ea80fc;
+}
+
+.color-background-dark-dark {
+  background-color: #202020;
+}
+.color-background-dark-light {
+  background-color: #404040;
+}
+.color-background-bright-dark {
+  background-color: #78909c;
+}
+.color-background-bright-light {
+  background-color: #9c9c9c;
+}
+.color-background-medium-dark {
+  background-color: #404040;
+}
+.color-background-medium-light {
+  background-color: #78909c;
+}
+.color-background-light-dark {
+  background-color: #78909c;
+}
+.color-background-light-light {
+  background-color: white;
+}
+.color-background-mercurius-dark {
+  background-color: #c0392b;
+}
+.color-background-mercurius-light {
+  background-color: #e57373;
+}
+.color-background-sol-dark {
+  background-color: #a8601a;
+}
+.color-background-sol-light {
+  background-color: #e5c07b;
+}
+.color-background-terra-dark {
+  background-color: #2e7d32;
+}
+.color-background-terra-light {
+  background-color: #8bc34a;
+}
+.color-background-venere-dark {
+  background-color: #1565c0;
+}
+.color-background-venere-light {
+  background-color: #40c4ff;
+}
+.color-background-neptunius-dark {
+  background-color: #9c00b0;
+}
+.color-background-neptunius-light {
+  background-color: #ea80fc;
+}
+
+.color-gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-dark-dark {
+  background: linear-gradient(0deg, #202020, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-dark-light {
+  background: linear-gradient(0deg, #202020, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-bright-dark {
+  background: linear-gradient(0deg, #202020, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-bright-light {
+  background: linear-gradient(0deg, #202020, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-medium-dark {
+  background: linear-gradient(0deg, #202020, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-medium-light {
+  background: linear-gradient(0deg, #202020, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-light-dark {
+  background: linear-gradient(0deg, #202020, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-light-light {
+  background: linear-gradient(0deg, #202020, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-mercurius-dark {
+  background: linear-gradient(0deg, #202020, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-mercurius-light {
+  background: linear-gradient(0deg, #202020, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-sol-dark {
+  background: linear-gradient(0deg, #202020, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-sol-light {
+  background: linear-gradient(0deg, #202020, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-terra-dark {
+  background: linear-gradient(0deg, #202020, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-terra-light {
+  background: linear-gradient(0deg, #202020, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-venere-dark {
+  background: linear-gradient(0deg, #202020, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-venere-light {
+  background: linear-gradient(0deg, #202020, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-neptunius-dark {
+  background: linear-gradient(0deg, #202020, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-dark-to-neptunius-light {
+  background: linear-gradient(0deg, #202020, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-dark-dark {
+  background: linear-gradient(0deg, #404040, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-dark-light {
+  background: linear-gradient(0deg, #404040, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-bright-dark {
+  background: linear-gradient(0deg, #404040, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-bright-light {
+  background: linear-gradient(0deg, #404040, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-medium-dark {
+  background: linear-gradient(0deg, #404040, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-medium-light {
+  background: linear-gradient(0deg, #404040, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-light-dark {
+  background: linear-gradient(0deg, #404040, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-light-light {
+  background: linear-gradient(0deg, #404040, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-mercurius-dark {
+  background: linear-gradient(0deg, #404040, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-mercurius-light {
+  background: linear-gradient(0deg, #404040, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-sol-dark {
+  background: linear-gradient(0deg, #404040, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-sol-light {
+  background: linear-gradient(0deg, #404040, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-terra-dark {
+  background: linear-gradient(0deg, #404040, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-terra-light {
+  background: linear-gradient(0deg, #404040, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-venere-dark {
+  background: linear-gradient(0deg, #404040, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-venere-light {
+  background: linear-gradient(0deg, #404040, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-neptunius-dark {
+  background: linear-gradient(0deg, #404040, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-dark-light-to-neptunius-light {
+  background: linear-gradient(0deg, #404040, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-dark-dark {
+  background: linear-gradient(0deg, #78909C, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-dark-light {
+  background: linear-gradient(0deg, #78909C, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-bright-dark {
+  background: linear-gradient(0deg, #78909C, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-bright-light {
+  background: linear-gradient(0deg, #78909C, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-medium-dark {
+  background: linear-gradient(0deg, #78909C, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-medium-light {
+  background: linear-gradient(0deg, #78909C, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-light-dark {
+  background: linear-gradient(0deg, #78909C, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-light-light {
+  background: linear-gradient(0deg, #78909C, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-mercurius-dark {
+  background: linear-gradient(0deg, #78909C, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-mercurius-light {
+  background: linear-gradient(0deg, #78909C, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-sol-dark {
+  background: linear-gradient(0deg, #78909C, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-sol-light {
+  background: linear-gradient(0deg, #78909C, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-terra-dark {
+  background: linear-gradient(0deg, #78909C, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-terra-light {
+  background: linear-gradient(0deg, #78909C, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-venere-dark {
+  background: linear-gradient(0deg, #78909C, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-venere-light {
+  background: linear-gradient(0deg, #78909C, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-neptunius-dark {
+  background: linear-gradient(0deg, #78909C, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-dark-to-neptunius-light {
+  background: linear-gradient(0deg, #78909C, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-dark-dark {
+  background: linear-gradient(0deg, #9c9c9c, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-dark-light {
+  background: linear-gradient(0deg, #9c9c9c, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-bright-dark {
+  background: linear-gradient(0deg, #9c9c9c, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-bright-light {
+  background: linear-gradient(0deg, #9c9c9c, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-medium-dark {
+  background: linear-gradient(0deg, #9c9c9c, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-medium-light {
+  background: linear-gradient(0deg, #9c9c9c, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-light-dark {
+  background: linear-gradient(0deg, #9c9c9c, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-light-light {
+  background: linear-gradient(0deg, #9c9c9c, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-mercurius-dark {
+  background: linear-gradient(0deg, #9c9c9c, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-mercurius-light {
+  background: linear-gradient(0deg, #9c9c9c, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-sol-dark {
+  background: linear-gradient(0deg, #9c9c9c, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-sol-light {
+  background: linear-gradient(0deg, #9c9c9c, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-terra-dark {
+  background: linear-gradient(0deg, #9c9c9c, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-terra-light {
+  background: linear-gradient(0deg, #9c9c9c, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-venere-dark {
+  background: linear-gradient(0deg, #9c9c9c, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-venere-light {
+  background: linear-gradient(0deg, #9c9c9c, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-neptunius-dark {
+  background: linear-gradient(0deg, #9c9c9c, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-bright-light-to-neptunius-light {
+  background: linear-gradient(0deg, #9c9c9c, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-dark-dark {
+  background: linear-gradient(0deg, #404040, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-dark-light {
+  background: linear-gradient(0deg, #404040, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-bright-dark {
+  background: linear-gradient(0deg, #404040, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-bright-light {
+  background: linear-gradient(0deg, #404040, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-medium-dark {
+  background: linear-gradient(0deg, #404040, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-medium-light {
+  background: linear-gradient(0deg, #404040, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-light-dark {
+  background: linear-gradient(0deg, #404040, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-light-light {
+  background: linear-gradient(0deg, #404040, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-mercurius-dark {
+  background: linear-gradient(0deg, #404040, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-mercurius-light {
+  background: linear-gradient(0deg, #404040, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-sol-dark {
+  background: linear-gradient(0deg, #404040, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-sol-light {
+  background: linear-gradient(0deg, #404040, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-terra-dark {
+  background: linear-gradient(0deg, #404040, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-terra-light {
+  background: linear-gradient(0deg, #404040, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-venere-dark {
+  background: linear-gradient(0deg, #404040, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-venere-light {
+  background: linear-gradient(0deg, #404040, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-neptunius-dark {
+  background: linear-gradient(0deg, #404040, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-dark-to-neptunius-light {
+  background: linear-gradient(0deg, #404040, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-dark-dark {
+  background: linear-gradient(0deg, #78909C, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-dark-light {
+  background: linear-gradient(0deg, #78909C, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-bright-dark {
+  background: linear-gradient(0deg, #78909C, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-bright-light {
+  background: linear-gradient(0deg, #78909C, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-medium-dark {
+  background: linear-gradient(0deg, #78909C, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-medium-light {
+  background: linear-gradient(0deg, #78909C, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-light-dark {
+  background: linear-gradient(0deg, #78909C, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-light-light {
+  background: linear-gradient(0deg, #78909C, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-mercurius-dark {
+  background: linear-gradient(0deg, #78909C, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-mercurius-light {
+  background: linear-gradient(0deg, #78909C, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-sol-dark {
+  background: linear-gradient(0deg, #78909C, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-sol-light {
+  background: linear-gradient(0deg, #78909C, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-terra-dark {
+  background: linear-gradient(0deg, #78909C, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-terra-light {
+  background: linear-gradient(0deg, #78909C, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-venere-dark {
+  background: linear-gradient(0deg, #78909C, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-venere-light {
+  background: linear-gradient(0deg, #78909C, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-neptunius-dark {
+  background: linear-gradient(0deg, #78909C, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-medium-light-to-neptunius-light {
+  background: linear-gradient(0deg, #78909C, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-dark-dark {
+  background: linear-gradient(0deg, #78909C, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-dark-light {
+  background: linear-gradient(0deg, #78909C, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-bright-dark {
+  background: linear-gradient(0deg, #78909C, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-bright-light {
+  background: linear-gradient(0deg, #78909C, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-medium-dark {
+  background: linear-gradient(0deg, #78909C, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-medium-light {
+  background: linear-gradient(0deg, #78909C, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-light-dark {
+  background: linear-gradient(0deg, #78909C, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-light-light {
+  background: linear-gradient(0deg, #78909C, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-mercurius-dark {
+  background: linear-gradient(0deg, #78909C, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-mercurius-light {
+  background: linear-gradient(0deg, #78909C, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-sol-dark {
+  background: linear-gradient(0deg, #78909C, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-sol-light {
+  background: linear-gradient(0deg, #78909C, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-terra-dark {
+  background: linear-gradient(0deg, #78909C, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-terra-light {
+  background: linear-gradient(0deg, #78909C, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-venere-dark {
+  background: linear-gradient(0deg, #78909C, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-venere-light {
+  background: linear-gradient(0deg, #78909C, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-neptunius-dark {
+  background: linear-gradient(0deg, #78909C, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-dark-to-neptunius-light {
+  background: linear-gradient(0deg, #78909C, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-dark-dark {
+  background: linear-gradient(0deg, #ffffff, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-dark-light {
+  background: linear-gradient(0deg, #ffffff, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-bright-dark {
+  background: linear-gradient(0deg, #ffffff, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-bright-light {
+  background: linear-gradient(0deg, #ffffff, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-medium-dark {
+  background: linear-gradient(0deg, #ffffff, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-medium-light {
+  background: linear-gradient(0deg, #ffffff, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-light-dark {
+  background: linear-gradient(0deg, #ffffff, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-light-light {
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-mercurius-dark {
+  background: linear-gradient(0deg, #ffffff, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-mercurius-light {
+  background: linear-gradient(0deg, #ffffff, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-sol-dark {
+  background: linear-gradient(0deg, #ffffff, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-sol-light {
+  background: linear-gradient(0deg, #ffffff, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-terra-dark {
+  background: linear-gradient(0deg, #ffffff, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-terra-light {
+  background: linear-gradient(0deg, #ffffff, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-venere-dark {
+  background: linear-gradient(0deg, #ffffff, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-venere-light {
+  background: linear-gradient(0deg, #ffffff, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-neptunius-dark {
+  background: linear-gradient(0deg, #ffffff, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-light-light-to-neptunius-light {
+  background: linear-gradient(0deg, #ffffff, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-dark-dark {
+  background: linear-gradient(0deg, #C0392B, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-dark-light {
+  background: linear-gradient(0deg, #C0392B, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-bright-dark {
+  background: linear-gradient(0deg, #C0392B, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-bright-light {
+  background: linear-gradient(0deg, #C0392B, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-medium-dark {
+  background: linear-gradient(0deg, #C0392B, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-medium-light {
+  background: linear-gradient(0deg, #C0392B, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-light-dark {
+  background: linear-gradient(0deg, #C0392B, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-light-light {
+  background: linear-gradient(0deg, #C0392B, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-mercurius-dark {
+  background: linear-gradient(0deg, #C0392B, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-mercurius-light {
+  background: linear-gradient(0deg, #C0392B, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-sol-dark {
+  background: linear-gradient(0deg, #C0392B, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-sol-light {
+  background: linear-gradient(0deg, #C0392B, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-terra-dark {
+  background: linear-gradient(0deg, #C0392B, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-terra-light {
+  background: linear-gradient(0deg, #C0392B, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-venere-dark {
+  background: linear-gradient(0deg, #C0392B, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-venere-light {
+  background: linear-gradient(0deg, #C0392B, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-neptunius-dark {
+  background: linear-gradient(0deg, #C0392B, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-dark-to-neptunius-light {
+  background: linear-gradient(0deg, #C0392B, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-dark-dark {
+  background: linear-gradient(0deg, #E57373, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-dark-light {
+  background: linear-gradient(0deg, #E57373, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-bright-dark {
+  background: linear-gradient(0deg, #E57373, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-bright-light {
+  background: linear-gradient(0deg, #E57373, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-medium-dark {
+  background: linear-gradient(0deg, #E57373, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-medium-light {
+  background: linear-gradient(0deg, #E57373, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-light-dark {
+  background: linear-gradient(0deg, #E57373, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-light-light {
+  background: linear-gradient(0deg, #E57373, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-mercurius-dark {
+  background: linear-gradient(0deg, #E57373, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-mercurius-light {
+  background: linear-gradient(0deg, #E57373, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-sol-dark {
+  background: linear-gradient(0deg, #E57373, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-sol-light {
+  background: linear-gradient(0deg, #E57373, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-terra-dark {
+  background: linear-gradient(0deg, #E57373, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-terra-light {
+  background: linear-gradient(0deg, #E57373, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-venere-dark {
+  background: linear-gradient(0deg, #E57373, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-venere-light {
+  background: linear-gradient(0deg, #E57373, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-neptunius-dark {
+  background: linear-gradient(0deg, #E57373, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-mercurius-light-to-neptunius-light {
+  background: linear-gradient(0deg, #E57373, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-dark-dark {
+  background: linear-gradient(0deg, #A8601A, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-dark-light {
+  background: linear-gradient(0deg, #A8601A, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-bright-dark {
+  background: linear-gradient(0deg, #A8601A, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-bright-light {
+  background: linear-gradient(0deg, #A8601A, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-medium-dark {
+  background: linear-gradient(0deg, #A8601A, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-medium-light {
+  background: linear-gradient(0deg, #A8601A, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-light-dark {
+  background: linear-gradient(0deg, #A8601A, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-light-light {
+  background: linear-gradient(0deg, #A8601A, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-mercurius-dark {
+  background: linear-gradient(0deg, #A8601A, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-mercurius-light {
+  background: linear-gradient(0deg, #A8601A, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-sol-dark {
+  background: linear-gradient(0deg, #A8601A, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-sol-light {
+  background: linear-gradient(0deg, #A8601A, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-terra-dark {
+  background: linear-gradient(0deg, #A8601A, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-terra-light {
+  background: linear-gradient(0deg, #A8601A, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-venere-dark {
+  background: linear-gradient(0deg, #A8601A, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-venere-light {
+  background: linear-gradient(0deg, #A8601A, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-neptunius-dark {
+  background: linear-gradient(0deg, #A8601A, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-dark-to-neptunius-light {
+  background: linear-gradient(0deg, #A8601A, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-dark-dark {
+  background: linear-gradient(0deg, #E5C07B, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-dark-light {
+  background: linear-gradient(0deg, #E5C07B, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-bright-dark {
+  background: linear-gradient(0deg, #E5C07B, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-bright-light {
+  background: linear-gradient(0deg, #E5C07B, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-medium-dark {
+  background: linear-gradient(0deg, #E5C07B, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-medium-light {
+  background: linear-gradient(0deg, #E5C07B, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-light-dark {
+  background: linear-gradient(0deg, #E5C07B, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-light-light {
+  background: linear-gradient(0deg, #E5C07B, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-mercurius-dark {
+  background: linear-gradient(0deg, #E5C07B, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-mercurius-light {
+  background: linear-gradient(0deg, #E5C07B, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-sol-dark {
+  background: linear-gradient(0deg, #E5C07B, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-sol-light {
+  background: linear-gradient(0deg, #E5C07B, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-terra-dark {
+  background: linear-gradient(0deg, #E5C07B, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-terra-light {
+  background: linear-gradient(0deg, #E5C07B, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-venere-dark {
+  background: linear-gradient(0deg, #E5C07B, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-venere-light {
+  background: linear-gradient(0deg, #E5C07B, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-neptunius-dark {
+  background: linear-gradient(0deg, #E5C07B, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-sol-light-to-neptunius-light {
+  background: linear-gradient(0deg, #E5C07B, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-dark-dark {
+  background: linear-gradient(0deg, #2E7D32, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-dark-light {
+  background: linear-gradient(0deg, #2E7D32, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-bright-dark {
+  background: linear-gradient(0deg, #2E7D32, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-bright-light {
+  background: linear-gradient(0deg, #2E7D32, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-medium-dark {
+  background: linear-gradient(0deg, #2E7D32, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-medium-light {
+  background: linear-gradient(0deg, #2E7D32, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-light-dark {
+  background: linear-gradient(0deg, #2E7D32, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-light-light {
+  background: linear-gradient(0deg, #2E7D32, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-mercurius-dark {
+  background: linear-gradient(0deg, #2E7D32, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-mercurius-light {
+  background: linear-gradient(0deg, #2E7D32, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-sol-dark {
+  background: linear-gradient(0deg, #2E7D32, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-sol-light {
+  background: linear-gradient(0deg, #2E7D32, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-terra-dark {
+  background: linear-gradient(0deg, #2E7D32, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-terra-light {
+  background: linear-gradient(0deg, #2E7D32, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-venere-dark {
+  background: linear-gradient(0deg, #2E7D32, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-venere-light {
+  background: linear-gradient(0deg, #2E7D32, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-neptunius-dark {
+  background: linear-gradient(0deg, #2E7D32, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-dark-to-neptunius-light {
+  background: linear-gradient(0deg, #2E7D32, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-dark-dark {
+  background: linear-gradient(0deg, #8BC34A, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-dark-light {
+  background: linear-gradient(0deg, #8BC34A, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-bright-dark {
+  background: linear-gradient(0deg, #8BC34A, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-bright-light {
+  background: linear-gradient(0deg, #8BC34A, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-medium-dark {
+  background: linear-gradient(0deg, #8BC34A, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-medium-light {
+  background: linear-gradient(0deg, #8BC34A, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-light-dark {
+  background: linear-gradient(0deg, #8BC34A, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-light-light {
+  background: linear-gradient(0deg, #8BC34A, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-mercurius-dark {
+  background: linear-gradient(0deg, #8BC34A, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-mercurius-light {
+  background: linear-gradient(0deg, #8BC34A, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-sol-dark {
+  background: linear-gradient(0deg, #8BC34A, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-sol-light {
+  background: linear-gradient(0deg, #8BC34A, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-terra-dark {
+  background: linear-gradient(0deg, #8BC34A, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-terra-light {
+  background: linear-gradient(0deg, #8BC34A, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-venere-dark {
+  background: linear-gradient(0deg, #8BC34A, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-venere-light {
+  background: linear-gradient(0deg, #8BC34A, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-neptunius-dark {
+  background: linear-gradient(0deg, #8BC34A, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-terra-light-to-neptunius-light {
+  background: linear-gradient(0deg, #8BC34A, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-dark-dark {
+  background: linear-gradient(0deg, #1565C0, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-dark-light {
+  background: linear-gradient(0deg, #1565C0, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-bright-dark {
+  background: linear-gradient(0deg, #1565C0, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-bright-light {
+  background: linear-gradient(0deg, #1565C0, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-medium-dark {
+  background: linear-gradient(0deg, #1565C0, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-medium-light {
+  background: linear-gradient(0deg, #1565C0, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-light-dark {
+  background: linear-gradient(0deg, #1565C0, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-light-light {
+  background: linear-gradient(0deg, #1565C0, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-mercurius-dark {
+  background: linear-gradient(0deg, #1565C0, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-mercurius-light {
+  background: linear-gradient(0deg, #1565C0, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-sol-dark {
+  background: linear-gradient(0deg, #1565C0, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-sol-light {
+  background: linear-gradient(0deg, #1565C0, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-terra-dark {
+  background: linear-gradient(0deg, #1565C0, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-terra-light {
+  background: linear-gradient(0deg, #1565C0, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-venere-dark {
+  background: linear-gradient(0deg, #1565C0, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-venere-light {
+  background: linear-gradient(0deg, #1565C0, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-neptunius-dark {
+  background: linear-gradient(0deg, #1565C0, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-dark-to-neptunius-light {
+  background: linear-gradient(0deg, #1565C0, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-dark-dark {
+  background: linear-gradient(0deg, #40C4FF, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-dark-light {
+  background: linear-gradient(0deg, #40C4FF, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-bright-dark {
+  background: linear-gradient(0deg, #40C4FF, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-bright-light {
+  background: linear-gradient(0deg, #40C4FF, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-medium-dark {
+  background: linear-gradient(0deg, #40C4FF, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-medium-light {
+  background: linear-gradient(0deg, #40C4FF, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-light-dark {
+  background: linear-gradient(0deg, #40C4FF, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-light-light {
+  background: linear-gradient(0deg, #40C4FF, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-mercurius-dark {
+  background: linear-gradient(0deg, #40C4FF, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-mercurius-light {
+  background: linear-gradient(0deg, #40C4FF, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-sol-dark {
+  background: linear-gradient(0deg, #40C4FF, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-sol-light {
+  background: linear-gradient(0deg, #40C4FF, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-terra-dark {
+  background: linear-gradient(0deg, #40C4FF, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-terra-light {
+  background: linear-gradient(0deg, #40C4FF, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-venere-dark {
+  background: linear-gradient(0deg, #40C4FF, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-venere-light {
+  background: linear-gradient(0deg, #40C4FF, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-neptunius-dark {
+  background: linear-gradient(0deg, #40C4FF, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-venere-light-to-neptunius-light {
+  background: linear-gradient(0deg, #40C4FF, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-dark-dark {
+  background: linear-gradient(0deg, #9C00B0, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-dark-light {
+  background: linear-gradient(0deg, #9C00B0, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-bright-dark {
+  background: linear-gradient(0deg, #9C00B0, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-bright-light {
+  background: linear-gradient(0deg, #9C00B0, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-medium-dark {
+  background: linear-gradient(0deg, #9C00B0, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-medium-light {
+  background: linear-gradient(0deg, #9C00B0, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-light-dark {
+  background: linear-gradient(0deg, #9C00B0, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-light-light {
+  background: linear-gradient(0deg, #9C00B0, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-mercurius-dark {
+  background: linear-gradient(0deg, #9C00B0, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-mercurius-light {
+  background: linear-gradient(0deg, #9C00B0, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-sol-dark {
+  background: linear-gradient(0deg, #9C00B0, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-sol-light {
+  background: linear-gradient(0deg, #9C00B0, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-terra-dark {
+  background: linear-gradient(0deg, #9C00B0, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-terra-light {
+  background: linear-gradient(0deg, #9C00B0, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-venere-dark {
+  background: linear-gradient(0deg, #9C00B0, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-venere-light {
+  background: linear-gradient(0deg, #9C00B0, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-neptunius-dark {
+  background: linear-gradient(0deg, #9C00B0, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-dark-to-neptunius-light {
+  background: linear-gradient(0deg, #9C00B0, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-dark-dark {
+  background: linear-gradient(0deg, #EA80FC, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-dark-light {
+  background: linear-gradient(0deg, #EA80FC, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-bright-dark {
+  background: linear-gradient(0deg, #EA80FC, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-bright-light {
+  background: linear-gradient(0deg, #EA80FC, #9c9c9c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-medium-dark {
+  background: linear-gradient(0deg, #EA80FC, #404040);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-medium-light {
+  background: linear-gradient(0deg, #EA80FC, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-light-dark {
+  background: linear-gradient(0deg, #EA80FC, #78909C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-light-light {
+  background: linear-gradient(0deg, #EA80FC, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-mercurius-dark {
+  background: linear-gradient(0deg, #EA80FC, #C0392B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-mercurius-light {
+  background: linear-gradient(0deg, #EA80FC, #E57373);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-sol-dark {
+  background: linear-gradient(0deg, #EA80FC, #A8601A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-sol-light {
+  background: linear-gradient(0deg, #EA80FC, #E5C07B);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-terra-dark {
+  background: linear-gradient(0deg, #EA80FC, #2E7D32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-terra-light {
+  background: linear-gradient(0deg, #EA80FC, #8BC34A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-venere-dark {
+  background: linear-gradient(0deg, #EA80FC, #1565C0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-venere-light {
+  background: linear-gradient(0deg, #EA80FC, #40C4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-neptunius-dark {
+  background: linear-gradient(0deg, #EA80FC, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.color-gradient-text-neptunius-light-to-neptunius-light {
+  background: linear-gradient(0deg, #EA80FC, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-gradient-background-dark-dark-to-dark-dark {
+  background: linear-gradient(180deg, #202020, #202020);
+}
+.color-gradient-background-dark-dark-to-dark-light {
+  background: linear-gradient(180deg, #202020, #404040);
+}
+.color-gradient-background-dark-dark-to-bright-dark {
+  background: linear-gradient(180deg, #202020, #78909C);
+}
+.color-gradient-background-dark-dark-to-bright-light {
+  background: linear-gradient(180deg, #202020, #9c9c9c);
+}
+.color-gradient-background-dark-dark-to-medium-dark {
+  background: linear-gradient(180deg, #202020, #404040);
+}
+.color-gradient-background-dark-dark-to-medium-light {
+  background: linear-gradient(180deg, #202020, #78909C);
+}
+.color-gradient-background-dark-dark-to-light-dark {
+  background: linear-gradient(180deg, #202020, #78909C);
+}
+.color-gradient-background-dark-dark-to-light-light {
+  background: linear-gradient(180deg, #202020, #ffffff);
+}
+.color-gradient-background-dark-dark-to-mercurius-dark {
+  background: linear-gradient(180deg, #202020, #C0392B);
+}
+.color-gradient-background-dark-dark-to-mercurius-light {
+  background: linear-gradient(180deg, #202020, #E57373);
+}
+.color-gradient-background-dark-dark-to-sol-dark {
+  background: linear-gradient(180deg, #202020, #A8601A);
+}
+.color-gradient-background-dark-dark-to-sol-light {
+  background: linear-gradient(180deg, #202020, #E5C07B);
+}
+.color-gradient-background-dark-dark-to-terra-dark {
+  background: linear-gradient(180deg, #202020, #2E7D32);
+}
+.color-gradient-background-dark-dark-to-terra-light {
+  background: linear-gradient(180deg, #202020, #8BC34A);
+}
+.color-gradient-background-dark-dark-to-venere-dark {
+  background: linear-gradient(180deg, #202020, #1565C0);
+}
+.color-gradient-background-dark-dark-to-venere-light {
+  background: linear-gradient(180deg, #202020, #40C4FF);
+}
+.color-gradient-background-dark-dark-to-neptunius-dark {
+  background: linear-gradient(180deg, #202020, #9C00B0);
+}
+.color-gradient-background-dark-dark-to-neptunius-light {
+  background: linear-gradient(180deg, #202020, #EA80FC);
+}
+.color-gradient-background-dark-light-to-dark-dark {
+  background: linear-gradient(180deg, #404040, #202020);
+}
+.color-gradient-background-dark-light-to-dark-light {
+  background: linear-gradient(180deg, #404040, #404040);
+}
+.color-gradient-background-dark-light-to-bright-dark {
+  background: linear-gradient(180deg, #404040, #78909C);
+}
+.color-gradient-background-dark-light-to-bright-light {
+  background: linear-gradient(180deg, #404040, #9c9c9c);
+}
+.color-gradient-background-dark-light-to-medium-dark {
+  background: linear-gradient(180deg, #404040, #404040);
+}
+.color-gradient-background-dark-light-to-medium-light {
+  background: linear-gradient(180deg, #404040, #78909C);
+}
+.color-gradient-background-dark-light-to-light-dark {
+  background: linear-gradient(180deg, #404040, #78909C);
+}
+.color-gradient-background-dark-light-to-light-light {
+  background: linear-gradient(180deg, #404040, #ffffff);
+}
+.color-gradient-background-dark-light-to-mercurius-dark {
+  background: linear-gradient(180deg, #404040, #C0392B);
+}
+.color-gradient-background-dark-light-to-mercurius-light {
+  background: linear-gradient(180deg, #404040, #E57373);
+}
+.color-gradient-background-dark-light-to-sol-dark {
+  background: linear-gradient(180deg, #404040, #A8601A);
+}
+.color-gradient-background-dark-light-to-sol-light {
+  background: linear-gradient(180deg, #404040, #E5C07B);
+}
+.color-gradient-background-dark-light-to-terra-dark {
+  background: linear-gradient(180deg, #404040, #2E7D32);
+}
+.color-gradient-background-dark-light-to-terra-light {
+  background: linear-gradient(180deg, #404040, #8BC34A);
+}
+.color-gradient-background-dark-light-to-venere-dark {
+  background: linear-gradient(180deg, #404040, #1565C0);
+}
+.color-gradient-background-dark-light-to-venere-light {
+  background: linear-gradient(180deg, #404040, #40C4FF);
+}
+.color-gradient-background-dark-light-to-neptunius-dark {
+  background: linear-gradient(180deg, #404040, #9C00B0);
+}
+.color-gradient-background-dark-light-to-neptunius-light {
+  background: linear-gradient(180deg, #404040, #EA80FC);
+}
+.color-gradient-background-bright-dark-to-dark-dark {
+  background: linear-gradient(180deg, #78909C, #202020);
+}
+.color-gradient-background-bright-dark-to-dark-light {
+  background: linear-gradient(180deg, #78909C, #404040);
+}
+.color-gradient-background-bright-dark-to-bright-dark {
+  background: linear-gradient(180deg, #78909C, #78909C);
+}
+.color-gradient-background-bright-dark-to-bright-light {
+  background: linear-gradient(180deg, #78909C, #9c9c9c);
+}
+.color-gradient-background-bright-dark-to-medium-dark {
+  background: linear-gradient(180deg, #78909C, #404040);
+}
+.color-gradient-background-bright-dark-to-medium-light {
+  background: linear-gradient(180deg, #78909C, #78909C);
+}
+.color-gradient-background-bright-dark-to-light-dark {
+  background: linear-gradient(180deg, #78909C, #78909C);
+}
+.color-gradient-background-bright-dark-to-light-light {
+  background: linear-gradient(180deg, #78909C, #ffffff);
+}
+.color-gradient-background-bright-dark-to-mercurius-dark {
+  background: linear-gradient(180deg, #78909C, #C0392B);
+}
+.color-gradient-background-bright-dark-to-mercurius-light {
+  background: linear-gradient(180deg, #78909C, #E57373);
+}
+.color-gradient-background-bright-dark-to-sol-dark {
+  background: linear-gradient(180deg, #78909C, #A8601A);
+}
+.color-gradient-background-bright-dark-to-sol-light {
+  background: linear-gradient(180deg, #78909C, #E5C07B);
+}
+.color-gradient-background-bright-dark-to-terra-dark {
+  background: linear-gradient(180deg, #78909C, #2E7D32);
+}
+.color-gradient-background-bright-dark-to-terra-light {
+  background: linear-gradient(180deg, #78909C, #8BC34A);
+}
+.color-gradient-background-bright-dark-to-venere-dark {
+  background: linear-gradient(180deg, #78909C, #1565C0);
+}
+.color-gradient-background-bright-dark-to-venere-light {
+  background: linear-gradient(180deg, #78909C, #40C4FF);
+}
+.color-gradient-background-bright-dark-to-neptunius-dark {
+  background: linear-gradient(180deg, #78909C, #9C00B0);
+}
+.color-gradient-background-bright-dark-to-neptunius-light {
+  background: linear-gradient(180deg, #78909C, #EA80FC);
+}
+.color-gradient-background-bright-light-to-dark-dark {
+  background: linear-gradient(180deg, #9c9c9c, #202020);
+}
+.color-gradient-background-bright-light-to-dark-light {
+  background: linear-gradient(180deg, #9c9c9c, #404040);
+}
+.color-gradient-background-bright-light-to-bright-dark {
+  background: linear-gradient(180deg, #9c9c9c, #78909C);
+}
+.color-gradient-background-bright-light-to-bright-light {
+  background: linear-gradient(180deg, #9c9c9c, #9c9c9c);
+}
+.color-gradient-background-bright-light-to-medium-dark {
+  background: linear-gradient(180deg, #9c9c9c, #404040);
+}
+.color-gradient-background-bright-light-to-medium-light {
+  background: linear-gradient(180deg, #9c9c9c, #78909C);
+}
+.color-gradient-background-bright-light-to-light-dark {
+  background: linear-gradient(180deg, #9c9c9c, #78909C);
+}
+.color-gradient-background-bright-light-to-light-light {
+  background: linear-gradient(180deg, #9c9c9c, #ffffff);
+}
+.color-gradient-background-bright-light-to-mercurius-dark {
+  background: linear-gradient(180deg, #9c9c9c, #C0392B);
+}
+.color-gradient-background-bright-light-to-mercurius-light {
+  background: linear-gradient(180deg, #9c9c9c, #E57373);
+}
+.color-gradient-background-bright-light-to-sol-dark {
+  background: linear-gradient(180deg, #9c9c9c, #A8601A);
+}
+.color-gradient-background-bright-light-to-sol-light {
+  background: linear-gradient(180deg, #9c9c9c, #E5C07B);
+}
+.color-gradient-background-bright-light-to-terra-dark {
+  background: linear-gradient(180deg, #9c9c9c, #2E7D32);
+}
+.color-gradient-background-bright-light-to-terra-light {
+  background: linear-gradient(180deg, #9c9c9c, #8BC34A);
+}
+.color-gradient-background-bright-light-to-venere-dark {
+  background: linear-gradient(180deg, #9c9c9c, #1565C0);
+}
+.color-gradient-background-bright-light-to-venere-light {
+  background: linear-gradient(180deg, #9c9c9c, #40C4FF);
+}
+.color-gradient-background-bright-light-to-neptunius-dark {
+  background: linear-gradient(180deg, #9c9c9c, #9C00B0);
+}
+.color-gradient-background-bright-light-to-neptunius-light {
+  background: linear-gradient(180deg, #9c9c9c, #EA80FC);
+}
+.color-gradient-background-medium-dark-to-dark-dark {
+  background: linear-gradient(180deg, #404040, #202020);
+}
+.color-gradient-background-medium-dark-to-dark-light {
+  background: linear-gradient(180deg, #404040, #404040);
+}
+.color-gradient-background-medium-dark-to-bright-dark {
+  background: linear-gradient(180deg, #404040, #78909C);
+}
+.color-gradient-background-medium-dark-to-bright-light {
+  background: linear-gradient(180deg, #404040, #9c9c9c);
+}
+.color-gradient-background-medium-dark-to-medium-dark {
+  background: linear-gradient(180deg, #404040, #404040);
+}
+.color-gradient-background-medium-dark-to-medium-light {
+  background: linear-gradient(180deg, #404040, #78909C);
+}
+.color-gradient-background-medium-dark-to-light-dark {
+  background: linear-gradient(180deg, #404040, #78909C);
+}
+.color-gradient-background-medium-dark-to-light-light {
+  background: linear-gradient(180deg, #404040, #ffffff);
+}
+.color-gradient-background-medium-dark-to-mercurius-dark {
+  background: linear-gradient(180deg, #404040, #C0392B);
+}
+.color-gradient-background-medium-dark-to-mercurius-light {
+  background: linear-gradient(180deg, #404040, #E57373);
+}
+.color-gradient-background-medium-dark-to-sol-dark {
+  background: linear-gradient(180deg, #404040, #A8601A);
+}
+.color-gradient-background-medium-dark-to-sol-light {
+  background: linear-gradient(180deg, #404040, #E5C07B);
+}
+.color-gradient-background-medium-dark-to-terra-dark {
+  background: linear-gradient(180deg, #404040, #2E7D32);
+}
+.color-gradient-background-medium-dark-to-terra-light {
+  background: linear-gradient(180deg, #404040, #8BC34A);
+}
+.color-gradient-background-medium-dark-to-venere-dark {
+  background: linear-gradient(180deg, #404040, #1565C0);
+}
+.color-gradient-background-medium-dark-to-venere-light {
+  background: linear-gradient(180deg, #404040, #40C4FF);
+}
+.color-gradient-background-medium-dark-to-neptunius-dark {
+  background: linear-gradient(180deg, #404040, #9C00B0);
+}
+.color-gradient-background-medium-dark-to-neptunius-light {
+  background: linear-gradient(180deg, #404040, #EA80FC);
+}
+.color-gradient-background-medium-light-to-dark-dark {
+  background: linear-gradient(180deg, #78909C, #202020);
+}
+.color-gradient-background-medium-light-to-dark-light {
+  background: linear-gradient(180deg, #78909C, #404040);
+}
+.color-gradient-background-medium-light-to-bright-dark {
+  background: linear-gradient(180deg, #78909C, #78909C);
+}
+.color-gradient-background-medium-light-to-bright-light {
+  background: linear-gradient(180deg, #78909C, #9c9c9c);
+}
+.color-gradient-background-medium-light-to-medium-dark {
+  background: linear-gradient(180deg, #78909C, #404040);
+}
+.color-gradient-background-medium-light-to-medium-light {
+  background: linear-gradient(180deg, #78909C, #78909C);
+}
+.color-gradient-background-medium-light-to-light-dark {
+  background: linear-gradient(180deg, #78909C, #78909C);
+}
+.color-gradient-background-medium-light-to-light-light {
+  background: linear-gradient(180deg, #78909C, #ffffff);
+}
+.color-gradient-background-medium-light-to-mercurius-dark {
+  background: linear-gradient(180deg, #78909C, #C0392B);
+}
+.color-gradient-background-medium-light-to-mercurius-light {
+  background: linear-gradient(180deg, #78909C, #E57373);
+}
+.color-gradient-background-medium-light-to-sol-dark {
+  background: linear-gradient(180deg, #78909C, #A8601A);
+}
+.color-gradient-background-medium-light-to-sol-light {
+  background: linear-gradient(180deg, #78909C, #E5C07B);
+}
+.color-gradient-background-medium-light-to-terra-dark {
+  background: linear-gradient(180deg, #78909C, #2E7D32);
+}
+.color-gradient-background-medium-light-to-terra-light {
+  background: linear-gradient(180deg, #78909C, #8BC34A);
+}
+.color-gradient-background-medium-light-to-venere-dark {
+  background: linear-gradient(180deg, #78909C, #1565C0);
+}
+.color-gradient-background-medium-light-to-venere-light {
+  background: linear-gradient(180deg, #78909C, #40C4FF);
+}
+.color-gradient-background-medium-light-to-neptunius-dark {
+  background: linear-gradient(180deg, #78909C, #9C00B0);
+}
+.color-gradient-background-medium-light-to-neptunius-light {
+  background: linear-gradient(180deg, #78909C, #EA80FC);
+}
+.color-gradient-background-light-dark-to-dark-dark {
+  background: linear-gradient(180deg, #78909C, #202020);
+}
+.color-gradient-background-light-dark-to-dark-light {
+  background: linear-gradient(180deg, #78909C, #404040);
+}
+.color-gradient-background-light-dark-to-bright-dark {
+  background: linear-gradient(180deg, #78909C, #78909C);
+}
+.color-gradient-background-light-dark-to-bright-light {
+  background: linear-gradient(180deg, #78909C, #9c9c9c);
+}
+.color-gradient-background-light-dark-to-medium-dark {
+  background: linear-gradient(180deg, #78909C, #404040);
+}
+.color-gradient-background-light-dark-to-medium-light {
+  background: linear-gradient(180deg, #78909C, #78909C);
+}
+.color-gradient-background-light-dark-to-light-dark {
+  background: linear-gradient(180deg, #78909C, #78909C);
+}
+.color-gradient-background-light-dark-to-light-light {
+  background: linear-gradient(180deg, #78909C, #ffffff);
+}
+.color-gradient-background-light-dark-to-mercurius-dark {
+  background: linear-gradient(180deg, #78909C, #C0392B);
+}
+.color-gradient-background-light-dark-to-mercurius-light {
+  background: linear-gradient(180deg, #78909C, #E57373);
+}
+.color-gradient-background-light-dark-to-sol-dark {
+  background: linear-gradient(180deg, #78909C, #A8601A);
+}
+.color-gradient-background-light-dark-to-sol-light {
+  background: linear-gradient(180deg, #78909C, #E5C07B);
+}
+.color-gradient-background-light-dark-to-terra-dark {
+  background: linear-gradient(180deg, #78909C, #2E7D32);
+}
+.color-gradient-background-light-dark-to-terra-light {
+  background: linear-gradient(180deg, #78909C, #8BC34A);
+}
+.color-gradient-background-light-dark-to-venere-dark {
+  background: linear-gradient(180deg, #78909C, #1565C0);
+}
+.color-gradient-background-light-dark-to-venere-light {
+  background: linear-gradient(180deg, #78909C, #40C4FF);
+}
+.color-gradient-background-light-dark-to-neptunius-dark {
+  background: linear-gradient(180deg, #78909C, #9C00B0);
+}
+.color-gradient-background-light-dark-to-neptunius-light {
+  background: linear-gradient(180deg, #78909C, #EA80FC);
+}
+.color-gradient-background-light-light-to-dark-dark {
+  background: linear-gradient(180deg, #ffffff, #202020);
+}
+.color-gradient-background-light-light-to-dark-light {
+  background: linear-gradient(180deg, #ffffff, #404040);
+}
+.color-gradient-background-light-light-to-bright-dark {
+  background: linear-gradient(180deg, #ffffff, #78909C);
+}
+.color-gradient-background-light-light-to-bright-light {
+  background: linear-gradient(180deg, #ffffff, #9c9c9c);
+}
+.color-gradient-background-light-light-to-medium-dark {
+  background: linear-gradient(180deg, #ffffff, #404040);
+}
+.color-gradient-background-light-light-to-medium-light {
+  background: linear-gradient(180deg, #ffffff, #78909C);
+}
+.color-gradient-background-light-light-to-light-dark {
+  background: linear-gradient(180deg, #ffffff, #78909C);
+}
+.color-gradient-background-light-light-to-light-light {
+  background: linear-gradient(180deg, #ffffff, #ffffff);
+}
+.color-gradient-background-light-light-to-mercurius-dark {
+  background: linear-gradient(180deg, #ffffff, #C0392B);
+}
+.color-gradient-background-light-light-to-mercurius-light {
+  background: linear-gradient(180deg, #ffffff, #E57373);
+}
+.color-gradient-background-light-light-to-sol-dark {
+  background: linear-gradient(180deg, #ffffff, #A8601A);
+}
+.color-gradient-background-light-light-to-sol-light {
+  background: linear-gradient(180deg, #ffffff, #E5C07B);
+}
+.color-gradient-background-light-light-to-terra-dark {
+  background: linear-gradient(180deg, #ffffff, #2E7D32);
+}
+.color-gradient-background-light-light-to-terra-light {
+  background: linear-gradient(180deg, #ffffff, #8BC34A);
+}
+.color-gradient-background-light-light-to-venere-dark {
+  background: linear-gradient(180deg, #ffffff, #1565C0);
+}
+.color-gradient-background-light-light-to-venere-light {
+  background: linear-gradient(180deg, #ffffff, #40C4FF);
+}
+.color-gradient-background-light-light-to-neptunius-dark {
+  background: linear-gradient(180deg, #ffffff, #9C00B0);
+}
+.color-gradient-background-light-light-to-neptunius-light {
+  background: linear-gradient(180deg, #ffffff, #EA80FC);
+}
+.color-gradient-background-mercurius-dark-to-dark-dark {
+  background: linear-gradient(180deg, #C0392B, #202020);
+}
+.color-gradient-background-mercurius-dark-to-dark-light {
+  background: linear-gradient(180deg, #C0392B, #404040);
+}
+.color-gradient-background-mercurius-dark-to-bright-dark {
+  background: linear-gradient(180deg, #C0392B, #78909C);
+}
+.color-gradient-background-mercurius-dark-to-bright-light {
+  background: linear-gradient(180deg, #C0392B, #9c9c9c);
+}
+.color-gradient-background-mercurius-dark-to-medium-dark {
+  background: linear-gradient(180deg, #C0392B, #404040);
+}
+.color-gradient-background-mercurius-dark-to-medium-light {
+  background: linear-gradient(180deg, #C0392B, #78909C);
+}
+.color-gradient-background-mercurius-dark-to-light-dark {
+  background: linear-gradient(180deg, #C0392B, #78909C);
+}
+.color-gradient-background-mercurius-dark-to-light-light {
+  background: linear-gradient(180deg, #C0392B, #ffffff);
+}
+.color-gradient-background-mercurius-dark-to-mercurius-dark {
+  background: linear-gradient(180deg, #C0392B, #C0392B);
+}
+.color-gradient-background-mercurius-dark-to-mercurius-light {
+  background: linear-gradient(180deg, #C0392B, #E57373);
+}
+.color-gradient-background-mercurius-dark-to-sol-dark {
+  background: linear-gradient(180deg, #C0392B, #A8601A);
+}
+.color-gradient-background-mercurius-dark-to-sol-light {
+  background: linear-gradient(180deg, #C0392B, #E5C07B);
+}
+.color-gradient-background-mercurius-dark-to-terra-dark {
+  background: linear-gradient(180deg, #C0392B, #2E7D32);
+}
+.color-gradient-background-mercurius-dark-to-terra-light {
+  background: linear-gradient(180deg, #C0392B, #8BC34A);
+}
+.color-gradient-background-mercurius-dark-to-venere-dark {
+  background: linear-gradient(180deg, #C0392B, #1565C0);
+}
+.color-gradient-background-mercurius-dark-to-venere-light {
+  background: linear-gradient(180deg, #C0392B, #40C4FF);
+}
+.color-gradient-background-mercurius-dark-to-neptunius-dark {
+  background: linear-gradient(180deg, #C0392B, #9C00B0);
+}
+.color-gradient-background-mercurius-dark-to-neptunius-light {
+  background: linear-gradient(180deg, #C0392B, #EA80FC);
+}
+.color-gradient-background-mercurius-light-to-dark-dark {
+  background: linear-gradient(180deg, #E57373, #202020);
+}
+.color-gradient-background-mercurius-light-to-dark-light {
+  background: linear-gradient(180deg, #E57373, #404040);
+}
+.color-gradient-background-mercurius-light-to-bright-dark {
+  background: linear-gradient(180deg, #E57373, #78909C);
+}
+.color-gradient-background-mercurius-light-to-bright-light {
+  background: linear-gradient(180deg, #E57373, #9c9c9c);
+}
+.color-gradient-background-mercurius-light-to-medium-dark {
+  background: linear-gradient(180deg, #E57373, #404040);
+}
+.color-gradient-background-mercurius-light-to-medium-light {
+  background: linear-gradient(180deg, #E57373, #78909C);
+}
+.color-gradient-background-mercurius-light-to-light-dark {
+  background: linear-gradient(180deg, #E57373, #78909C);
+}
+.color-gradient-background-mercurius-light-to-light-light {
+  background: linear-gradient(180deg, #E57373, #ffffff);
+}
+.color-gradient-background-mercurius-light-to-mercurius-dark {
+  background: linear-gradient(180deg, #E57373, #C0392B);
+}
+.color-gradient-background-mercurius-light-to-mercurius-light {
+  background: linear-gradient(180deg, #E57373, #E57373);
+}
+.color-gradient-background-mercurius-light-to-sol-dark {
+  background: linear-gradient(180deg, #E57373, #A8601A);
+}
+.color-gradient-background-mercurius-light-to-sol-light {
+  background: linear-gradient(180deg, #E57373, #E5C07B);
+}
+.color-gradient-background-mercurius-light-to-terra-dark {
+  background: linear-gradient(180deg, #E57373, #2E7D32);
+}
+.color-gradient-background-mercurius-light-to-terra-light {
+  background: linear-gradient(180deg, #E57373, #8BC34A);
+}
+.color-gradient-background-mercurius-light-to-venere-dark {
+  background: linear-gradient(180deg, #E57373, #1565C0);
+}
+.color-gradient-background-mercurius-light-to-venere-light {
+  background: linear-gradient(180deg, #E57373, #40C4FF);
+}
+.color-gradient-background-mercurius-light-to-neptunius-dark {
+  background: linear-gradient(180deg, #E57373, #9C00B0);
+}
+.color-gradient-background-mercurius-light-to-neptunius-light {
+  background: linear-gradient(180deg, #E57373, #EA80FC);
+}
+.color-gradient-background-sol-dark-to-dark-dark {
+  background: linear-gradient(180deg, #A8601A, #202020);
+}
+.color-gradient-background-sol-dark-to-dark-light {
+  background: linear-gradient(180deg, #A8601A, #404040);
+}
+.color-gradient-background-sol-dark-to-bright-dark {
+  background: linear-gradient(180deg, #A8601A, #78909C);
+}
+.color-gradient-background-sol-dark-to-bright-light {
+  background: linear-gradient(180deg, #A8601A, #9c9c9c);
+}
+.color-gradient-background-sol-dark-to-medium-dark {
+  background: linear-gradient(180deg, #A8601A, #404040);
+}
+.color-gradient-background-sol-dark-to-medium-light {
+  background: linear-gradient(180deg, #A8601A, #78909C);
+}
+.color-gradient-background-sol-dark-to-light-dark {
+  background: linear-gradient(180deg, #A8601A, #78909C);
+}
+.color-gradient-background-sol-dark-to-light-light {
+  background: linear-gradient(180deg, #A8601A, #ffffff);
+}
+.color-gradient-background-sol-dark-to-mercurius-dark {
+  background: linear-gradient(180deg, #A8601A, #C0392B);
+}
+.color-gradient-background-sol-dark-to-mercurius-light {
+  background: linear-gradient(180deg, #A8601A, #E57373);
+}
+.color-gradient-background-sol-dark-to-sol-dark {
+  background: linear-gradient(180deg, #A8601A, #A8601A);
+}
+.color-gradient-background-sol-dark-to-sol-light {
+  background: linear-gradient(180deg, #A8601A, #E5C07B);
+}
+.color-gradient-background-sol-dark-to-terra-dark {
+  background: linear-gradient(180deg, #A8601A, #2E7D32);
+}
+.color-gradient-background-sol-dark-to-terra-light {
+  background: linear-gradient(180deg, #A8601A, #8BC34A);
+}
+.color-gradient-background-sol-dark-to-venere-dark {
+  background: linear-gradient(180deg, #A8601A, #1565C0);
+}
+.color-gradient-background-sol-dark-to-venere-light {
+  background: linear-gradient(180deg, #A8601A, #40C4FF);
+}
+.color-gradient-background-sol-dark-to-neptunius-dark {
+  background: linear-gradient(180deg, #A8601A, #9C00B0);
+}
+.color-gradient-background-sol-dark-to-neptunius-light {
+  background: linear-gradient(180deg, #A8601A, #EA80FC);
+}
+.color-gradient-background-sol-light-to-dark-dark {
+  background: linear-gradient(180deg, #E5C07B, #202020);
+}
+.color-gradient-background-sol-light-to-dark-light {
+  background: linear-gradient(180deg, #E5C07B, #404040);
+}
+.color-gradient-background-sol-light-to-bright-dark {
+  background: linear-gradient(180deg, #E5C07B, #78909C);
+}
+.color-gradient-background-sol-light-to-bright-light {
+  background: linear-gradient(180deg, #E5C07B, #9c9c9c);
+}
+.color-gradient-background-sol-light-to-medium-dark {
+  background: linear-gradient(180deg, #E5C07B, #404040);
+}
+.color-gradient-background-sol-light-to-medium-light {
+  background: linear-gradient(180deg, #E5C07B, #78909C);
+}
+.color-gradient-background-sol-light-to-light-dark {
+  background: linear-gradient(180deg, #E5C07B, #78909C);
+}
+.color-gradient-background-sol-light-to-light-light {
+  background: linear-gradient(180deg, #E5C07B, #ffffff);
+}
+.color-gradient-background-sol-light-to-mercurius-dark {
+  background: linear-gradient(180deg, #E5C07B, #C0392B);
+}
+.color-gradient-background-sol-light-to-mercurius-light {
+  background: linear-gradient(180deg, #E5C07B, #E57373);
+}
+.color-gradient-background-sol-light-to-sol-dark {
+  background: linear-gradient(180deg, #E5C07B, #A8601A);
+}
+.color-gradient-background-sol-light-to-sol-light {
+  background: linear-gradient(180deg, #E5C07B, #E5C07B);
+}
+.color-gradient-background-sol-light-to-terra-dark {
+  background: linear-gradient(180deg, #E5C07B, #2E7D32);
+}
+.color-gradient-background-sol-light-to-terra-light {
+  background: linear-gradient(180deg, #E5C07B, #8BC34A);
+}
+.color-gradient-background-sol-light-to-venere-dark {
+  background: linear-gradient(180deg, #E5C07B, #1565C0);
+}
+.color-gradient-background-sol-light-to-venere-light {
+  background: linear-gradient(180deg, #E5C07B, #40C4FF);
+}
+.color-gradient-background-sol-light-to-neptunius-dark {
+  background: linear-gradient(180deg, #E5C07B, #9C00B0);
+}
+.color-gradient-background-sol-light-to-neptunius-light {
+  background: linear-gradient(180deg, #E5C07B, #EA80FC);
+}
+.color-gradient-background-terra-dark-to-dark-dark {
+  background: linear-gradient(180deg, #2E7D32, #202020);
+}
+.color-gradient-background-terra-dark-to-dark-light {
+  background: linear-gradient(180deg, #2E7D32, #404040);
+}
+.color-gradient-background-terra-dark-to-bright-dark {
+  background: linear-gradient(180deg, #2E7D32, #78909C);
+}
+.color-gradient-background-terra-dark-to-bright-light {
+  background: linear-gradient(180deg, #2E7D32, #9c9c9c);
+}
+.color-gradient-background-terra-dark-to-medium-dark {
+  background: linear-gradient(180deg, #2E7D32, #404040);
+}
+.color-gradient-background-terra-dark-to-medium-light {
+  background: linear-gradient(180deg, #2E7D32, #78909C);
+}
+.color-gradient-background-terra-dark-to-light-dark {
+  background: linear-gradient(180deg, #2E7D32, #78909C);
+}
+.color-gradient-background-terra-dark-to-light-light {
+  background: linear-gradient(180deg, #2E7D32, #ffffff);
+}
+.color-gradient-background-terra-dark-to-mercurius-dark {
+  background: linear-gradient(180deg, #2E7D32, #C0392B);
+}
+.color-gradient-background-terra-dark-to-mercurius-light {
+  background: linear-gradient(180deg, #2E7D32, #E57373);
+}
+.color-gradient-background-terra-dark-to-sol-dark {
+  background: linear-gradient(180deg, #2E7D32, #A8601A);
+}
+.color-gradient-background-terra-dark-to-sol-light {
+  background: linear-gradient(180deg, #2E7D32, #E5C07B);
+}
+.color-gradient-background-terra-dark-to-terra-dark {
+  background: linear-gradient(180deg, #2E7D32, #2E7D32);
+}
+.color-gradient-background-terra-dark-to-terra-light {
+  background: linear-gradient(180deg, #2E7D32, #8BC34A);
+}
+.color-gradient-background-terra-dark-to-venere-dark {
+  background: linear-gradient(180deg, #2E7D32, #1565C0);
+}
+.color-gradient-background-terra-dark-to-venere-light {
+  background: linear-gradient(180deg, #2E7D32, #40C4FF);
+}
+.color-gradient-background-terra-dark-to-neptunius-dark {
+  background: linear-gradient(180deg, #2E7D32, #9C00B0);
+}
+.color-gradient-background-terra-dark-to-neptunius-light {
+  background: linear-gradient(180deg, #2E7D32, #EA80FC);
+}
+.color-gradient-background-terra-light-to-dark-dark {
+  background: linear-gradient(180deg, #8BC34A, #202020);
+}
+.color-gradient-background-terra-light-to-dark-light {
+  background: linear-gradient(180deg, #8BC34A, #404040);
+}
+.color-gradient-background-terra-light-to-bright-dark {
+  background: linear-gradient(180deg, #8BC34A, #78909C);
+}
+.color-gradient-background-terra-light-to-bright-light {
+  background: linear-gradient(180deg, #8BC34A, #9c9c9c);
+}
+.color-gradient-background-terra-light-to-medium-dark {
+  background: linear-gradient(180deg, #8BC34A, #404040);
+}
+.color-gradient-background-terra-light-to-medium-light {
+  background: linear-gradient(180deg, #8BC34A, #78909C);
+}
+.color-gradient-background-terra-light-to-light-dark {
+  background: linear-gradient(180deg, #8BC34A, #78909C);
+}
+.color-gradient-background-terra-light-to-light-light {
+  background: linear-gradient(180deg, #8BC34A, #ffffff);
+}
+.color-gradient-background-terra-light-to-mercurius-dark {
+  background: linear-gradient(180deg, #8BC34A, #C0392B);
+}
+.color-gradient-background-terra-light-to-mercurius-light {
+  background: linear-gradient(180deg, #8BC34A, #E57373);
+}
+.color-gradient-background-terra-light-to-sol-dark {
+  background: linear-gradient(180deg, #8BC34A, #A8601A);
+}
+.color-gradient-background-terra-light-to-sol-light {
+  background: linear-gradient(180deg, #8BC34A, #E5C07B);
+}
+.color-gradient-background-terra-light-to-terra-dark {
+  background: linear-gradient(180deg, #8BC34A, #2E7D32);
+}
+.color-gradient-background-terra-light-to-terra-light {
+  background: linear-gradient(180deg, #8BC34A, #8BC34A);
+}
+.color-gradient-background-terra-light-to-venere-dark {
+  background: linear-gradient(180deg, #8BC34A, #1565C0);
+}
+.color-gradient-background-terra-light-to-venere-light {
+  background: linear-gradient(180deg, #8BC34A, #40C4FF);
+}
+.color-gradient-background-terra-light-to-neptunius-dark {
+  background: linear-gradient(180deg, #8BC34A, #9C00B0);
+}
+.color-gradient-background-terra-light-to-neptunius-light {
+  background: linear-gradient(180deg, #8BC34A, #EA80FC);
+}
+.color-gradient-background-venere-dark-to-dark-dark {
+  background: linear-gradient(180deg, #1565C0, #202020);
+}
+.color-gradient-background-venere-dark-to-dark-light {
+  background: linear-gradient(180deg, #1565C0, #404040);
+}
+.color-gradient-background-venere-dark-to-bright-dark {
+  background: linear-gradient(180deg, #1565C0, #78909C);
+}
+.color-gradient-background-venere-dark-to-bright-light {
+  background: linear-gradient(180deg, #1565C0, #9c9c9c);
+}
+.color-gradient-background-venere-dark-to-medium-dark {
+  background: linear-gradient(180deg, #1565C0, #404040);
+}
+.color-gradient-background-venere-dark-to-medium-light {
+  background: linear-gradient(180deg, #1565C0, #78909C);
+}
+.color-gradient-background-venere-dark-to-light-dark {
+  background: linear-gradient(180deg, #1565C0, #78909C);
+}
+.color-gradient-background-venere-dark-to-light-light {
+  background: linear-gradient(180deg, #1565C0, #ffffff);
+}
+.color-gradient-background-venere-dark-to-mercurius-dark {
+  background: linear-gradient(180deg, #1565C0, #C0392B);
+}
+.color-gradient-background-venere-dark-to-mercurius-light {
+  background: linear-gradient(180deg, #1565C0, #E57373);
+}
+.color-gradient-background-venere-dark-to-sol-dark {
+  background: linear-gradient(180deg, #1565C0, #A8601A);
+}
+.color-gradient-background-venere-dark-to-sol-light {
+  background: linear-gradient(180deg, #1565C0, #E5C07B);
+}
+.color-gradient-background-venere-dark-to-terra-dark {
+  background: linear-gradient(180deg, #1565C0, #2E7D32);
+}
+.color-gradient-background-venere-dark-to-terra-light {
+  background: linear-gradient(180deg, #1565C0, #8BC34A);
+}
+.color-gradient-background-venere-dark-to-venere-dark {
+  background: linear-gradient(180deg, #1565C0, #1565C0);
+}
+.color-gradient-background-venere-dark-to-venere-light {
+  background: linear-gradient(180deg, #1565C0, #40C4FF);
+}
+.color-gradient-background-venere-dark-to-neptunius-dark {
+  background: linear-gradient(180deg, #1565C0, #9C00B0);
+}
+.color-gradient-background-venere-dark-to-neptunius-light {
+  background: linear-gradient(180deg, #1565C0, #EA80FC);
+}
+.color-gradient-background-venere-light-to-dark-dark {
+  background: linear-gradient(180deg, #40C4FF, #202020);
+}
+.color-gradient-background-venere-light-to-dark-light {
+  background: linear-gradient(180deg, #40C4FF, #404040);
+}
+.color-gradient-background-venere-light-to-bright-dark {
+  background: linear-gradient(180deg, #40C4FF, #78909C);
+}
+.color-gradient-background-venere-light-to-bright-light {
+  background: linear-gradient(180deg, #40C4FF, #9c9c9c);
+}
+.color-gradient-background-venere-light-to-medium-dark {
+  background: linear-gradient(180deg, #40C4FF, #404040);
+}
+.color-gradient-background-venere-light-to-medium-light {
+  background: linear-gradient(180deg, #40C4FF, #78909C);
+}
+.color-gradient-background-venere-light-to-light-dark {
+  background: linear-gradient(180deg, #40C4FF, #78909C);
+}
+.color-gradient-background-venere-light-to-light-light {
+  background: linear-gradient(180deg, #40C4FF, #ffffff);
+}
+.color-gradient-background-venere-light-to-mercurius-dark {
+  background: linear-gradient(180deg, #40C4FF, #C0392B);
+}
+.color-gradient-background-venere-light-to-mercurius-light {
+  background: linear-gradient(180deg, #40C4FF, #E57373);
+}
+.color-gradient-background-venere-light-to-sol-dark {
+  background: linear-gradient(180deg, #40C4FF, #A8601A);
+}
+.color-gradient-background-venere-light-to-sol-light {
+  background: linear-gradient(180deg, #40C4FF, #E5C07B);
+}
+.color-gradient-background-venere-light-to-terra-dark {
+  background: linear-gradient(180deg, #40C4FF, #2E7D32);
+}
+.color-gradient-background-venere-light-to-terra-light {
+  background: linear-gradient(180deg, #40C4FF, #8BC34A);
+}
+.color-gradient-background-venere-light-to-venere-dark {
+  background: linear-gradient(180deg, #40C4FF, #1565C0);
+}
+.color-gradient-background-venere-light-to-venere-light {
+  background: linear-gradient(180deg, #40C4FF, #40C4FF);
+}
+.color-gradient-background-venere-light-to-neptunius-dark {
+  background: linear-gradient(180deg, #40C4FF, #9C00B0);
+}
+.color-gradient-background-venere-light-to-neptunius-light {
+  background: linear-gradient(180deg, #40C4FF, #EA80FC);
+}
+.color-gradient-background-neptunius-dark-to-dark-dark {
+  background: linear-gradient(180deg, #9C00B0, #202020);
+}
+.color-gradient-background-neptunius-dark-to-dark-light {
+  background: linear-gradient(180deg, #9C00B0, #404040);
+}
+.color-gradient-background-neptunius-dark-to-bright-dark {
+  background: linear-gradient(180deg, #9C00B0, #78909C);
+}
+.color-gradient-background-neptunius-dark-to-bright-light {
+  background: linear-gradient(180deg, #9C00B0, #9c9c9c);
+}
+.color-gradient-background-neptunius-dark-to-medium-dark {
+  background: linear-gradient(180deg, #9C00B0, #404040);
+}
+.color-gradient-background-neptunius-dark-to-medium-light {
+  background: linear-gradient(180deg, #9C00B0, #78909C);
+}
+.color-gradient-background-neptunius-dark-to-light-dark {
+  background: linear-gradient(180deg, #9C00B0, #78909C);
+}
+.color-gradient-background-neptunius-dark-to-light-light {
+  background: linear-gradient(180deg, #9C00B0, #ffffff);
+}
+.color-gradient-background-neptunius-dark-to-mercurius-dark {
+  background: linear-gradient(180deg, #9C00B0, #C0392B);
+}
+.color-gradient-background-neptunius-dark-to-mercurius-light {
+  background: linear-gradient(180deg, #9C00B0, #E57373);
+}
+.color-gradient-background-neptunius-dark-to-sol-dark {
+  background: linear-gradient(180deg, #9C00B0, #A8601A);
+}
+.color-gradient-background-neptunius-dark-to-sol-light {
+  background: linear-gradient(180deg, #9C00B0, #E5C07B);
+}
+.color-gradient-background-neptunius-dark-to-terra-dark {
+  background: linear-gradient(180deg, #9C00B0, #2E7D32);
+}
+.color-gradient-background-neptunius-dark-to-terra-light {
+  background: linear-gradient(180deg, #9C00B0, #8BC34A);
+}
+.color-gradient-background-neptunius-dark-to-venere-dark {
+  background: linear-gradient(180deg, #9C00B0, #1565C0);
+}
+.color-gradient-background-neptunius-dark-to-venere-light {
+  background: linear-gradient(180deg, #9C00B0, #40C4FF);
+}
+.color-gradient-background-neptunius-dark-to-neptunius-dark {
+  background: linear-gradient(180deg, #9C00B0, #9C00B0);
+}
+.color-gradient-background-neptunius-dark-to-neptunius-light {
+  background: linear-gradient(180deg, #9C00B0, #EA80FC);
+}
+.color-gradient-background-neptunius-light-to-dark-dark {
+  background: linear-gradient(180deg, #EA80FC, #202020);
+}
+.color-gradient-background-neptunius-light-to-dark-light {
+  background: linear-gradient(180deg, #EA80FC, #404040);
+}
+.color-gradient-background-neptunius-light-to-bright-dark {
+  background: linear-gradient(180deg, #EA80FC, #78909C);
+}
+.color-gradient-background-neptunius-light-to-bright-light {
+  background: linear-gradient(180deg, #EA80FC, #9c9c9c);
+}
+.color-gradient-background-neptunius-light-to-medium-dark {
+  background: linear-gradient(180deg, #EA80FC, #404040);
+}
+.color-gradient-background-neptunius-light-to-medium-light {
+  background: linear-gradient(180deg, #EA80FC, #78909C);
+}
+.color-gradient-background-neptunius-light-to-light-dark {
+  background: linear-gradient(180deg, #EA80FC, #78909C);
+}
+.color-gradient-background-neptunius-light-to-light-light {
+  background: linear-gradient(180deg, #EA80FC, #ffffff);
+}
+.color-gradient-background-neptunius-light-to-mercurius-dark {
+  background: linear-gradient(180deg, #EA80FC, #C0392B);
+}
+.color-gradient-background-neptunius-light-to-mercurius-light {
+  background: linear-gradient(180deg, #EA80FC, #E57373);
+}
+.color-gradient-background-neptunius-light-to-sol-dark {
+  background: linear-gradient(180deg, #EA80FC, #A8601A);
+}
+.color-gradient-background-neptunius-light-to-sol-light {
+  background: linear-gradient(180deg, #EA80FC, #E5C07B);
+}
+.color-gradient-background-neptunius-light-to-terra-dark {
+  background: linear-gradient(180deg, #EA80FC, #2E7D32);
+}
+.color-gradient-background-neptunius-light-to-terra-light {
+  background: linear-gradient(180deg, #EA80FC, #8BC34A);
+}
+.color-gradient-background-neptunius-light-to-venere-dark {
+  background: linear-gradient(180deg, #EA80FC, #1565C0);
+}
+.color-gradient-background-neptunius-light-to-venere-light {
+  background: linear-gradient(180deg, #EA80FC, #40C4FF);
+}
+.color-gradient-background-neptunius-light-to-neptunius-dark {
+  background: linear-gradient(180deg, #EA80FC, #9C00B0);
+}
+.color-gradient-background-neptunius-light-to-neptunius-light {
+  background: linear-gradient(180deg, #EA80FC, #EA80FC);
+}
+
+.color-gradient-background-rainbow-light {
+  background: linear-gradient(90deg, #E57373, #E5C07B, #8BC34A, #40C4FF, #EA80FC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-gradient-background-rainbow-dark {
+  background: linear-gradient(90deg, #C0392B, #A8601A, #2E7D32, #1565C0, #9C00B0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+blockquote.dark-dark {
+  background-color: rgba(32, 32, 32, 0.5);
+}
+blockquote.dark-light {
+  background-color: rgba(64, 64, 64, 0.5);
+}
+blockquote.bright-dark {
+  background-color: rgba(120, 144, 156, 0.5);
+}
+blockquote.bright-light {
+  background-color: rgba(156, 156, 156, 0.5);
+}
+blockquote.medium-dark {
+  background-color: rgba(64, 64, 64, 0.5);
+}
+blockquote.medium-light {
+  background-color: rgba(120, 144, 156, 0.5);
+}
+blockquote.light-dark {
+  background-color: rgba(120, 144, 156, 0.5);
+}
+blockquote.light-light {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+blockquote.mercurius-dark {
+  background-color: rgba(192, 57, 43, 0.5);
+}
+blockquote.mercurius-light {
+  background-color: rgba(229, 115, 115, 0.5);
+}
+blockquote.sol-dark {
+  background-color: rgba(168, 96, 26, 0.5);
+}
+blockquote.sol-light {
+  background-color: rgba(229, 192, 123, 0.5);
+}
+blockquote.terra-dark {
+  background-color: rgba(46, 125, 50, 0.5);
+}
+blockquote.terra-light {
+  background-color: rgba(139, 195, 74, 0.5);
+}
+blockquote.venere-dark {
+  background-color: rgba(21, 101, 192, 0.5);
+}
+blockquote.venere-light {
+  background-color: rgba(64, 196, 255, 0.5);
+}
+blockquote.neptunius-dark {
+  background-color: rgba(156, 0, 176, 0.5);
+}
+blockquote.neptunius-light {
+  background-color: rgba(234, 128, 252, 0.5);
+}
+
+/*# sourceMappingURL=colors.css.map */

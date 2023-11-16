@@ -1,0 +1,302 @@
+@use "sass:map";
+
+// COLORS
+
+/**
+ * Black
+ *
+ * @color
+ * @section Base Colors
+ */
+$color-dark: #202020;
+
+/**
+ * Bright
+ *
+ * @color
+ * @section Base Colors
+ */
+$color-bright: #ffffff;
+
+/**
+ * Tethys Light
+ *
+ * @color
+ * @section Base Colors
+ */
+$color-tethys-light: #9c9c9c;
+
+/**
+ * Tethys Dark
+ *
+ * @color
+ * @section Base Colors
+ */
+$color-tethys-dark: #404040;
+
+/**
+ * Giove
+ *
+ * @color
+ * @section Base Colors
+ */
+$color-giove: #78909C;
+
+/**
+ * Dark Venere
+ *
+ * @color
+ * @section Dark Colors
+ */
+$color-venere-dark: #1565C0;
+
+/**
+ * Light Venere
+ *
+ * @color
+ * @section Light Colors
+ */
+$color-venere-light: #40C4FF;
+
+/**
+ * Dark Green
+ *
+ * @color
+ * @section Dark Colors
+ */
+$color-terra-dark: #2E7D32;
+
+/**
+ * Light Green
+ *
+ * @color
+ * @section Light Colors
+ */
+$color-terra-light: #8BC34A;
+
+/**
+ * Dark Purple
+ *
+ * @color
+ * @section Dark Colors
+ */
+$color-neptunius-dark: #9C00B0;
+
+/**
+ * Light Purple
+ *
+ * @color
+ * @section Light Colors
+ */
+$color-neptunius-light: #EA80FC;
+
+/**
+ * Dark Red
+ *
+ * @color
+ * @section Dark Colors
+ */
+$color-mercurius-dark: #C0392B;
+
+/**
+ * Light Red
+ *
+ * @color
+ * @section Light Colors
+ */
+$color-mercurius-light: #E57373;
+
+/**
+ * Dark Yellow
+ *
+ * @color
+ * @section Dark Colors
+ */
+$color-sol-dark: #A8601A;
+
+/**
+ * Light Yellow
+ *
+ * @color
+ * @section Light Colors
+ */
+$color-sol-light: #E5C07B;
+
+$color-rainbow-dark: $color-mercurius-dark, $color-sol-dark, $color-terra-dark, $color-venere-dark, $color-neptunius-dark;
+$color-rainbow-light: $color-mercurius-light, $color-sol-light, $color-terra-light, $color-venere-light, $color-neptunius-light;
+
+// Color Maps
+// Each color has a dark and light variant.
+// This map is used to programmatically generate the color classes.
+$colors: (
+        dark : (
+                dark: $color-dark,
+                light: $color-tethys-dark
+        ),
+        bright : (
+                dark: $color-giove,
+                light: $color-tethys-light
+        ),
+        medium : (
+                dark: $color-tethys-dark,
+                light: $color-giove
+        ),
+        light : (
+                dark: $color-giove,
+                light: $color-bright
+        ),
+        mercurius: (
+                dark : $color-mercurius-dark,
+                light: $color-mercurius-light
+        ),
+        sol : (
+                dark : $color-sol-dark,
+                light : $color-sol-light
+        ),
+        terra: (
+                dark : $color-terra-dark,
+                light : $color-terra-light
+        ),
+        venere: (
+                dark : $color-venere-dark,
+                light : $color-venere-light
+        ),
+        neptunius : (
+                dark : $color-neptunius-dark,
+                light: $color-neptunius-light
+        ),
+);
+
+
+/**
+ * Create a light rainbow gradient
+ *
+ * @mixin
+ * @section Colors
+ * @param $property Either 'background' or 'color'
+ * @param $angle The angle of the gradient
+ * @example
+ *  @include color-gradient-rainbow-light(background, 30);
+ *  @include color-gradient-rainbow-light(color, 95);
+ */
+@mixin color-gradient-rainbow-light($property: 'background', $angle) {
+  #{$property}: linear-gradient(#{$angle}deg, $color-rainbow-light);
+}
+
+/**
+ * Create a dark rainbow gradient
+ *
+ * @mixin
+ * @section Colors
+ * @param $property Either 'background' or 'color'
+ * @param $angle The angle of the gradient
+ * @example
+ *  @include color-gradient-rainbow-light(background, 30);
+ *  @include color-gradient-rainbow-light(color, 95);
+ */
+@mixin color-gradient-rainbow-dark($property, $angle) {
+  #{$property}: linear-gradient(#{$angle}deg, $color-rainbow-dark);
+}
+
+/**
+ * Apply color gradient styles to a selector.
+ *
+ * @mixin
+ * @section Colors
+ * @param $attribute This is either 'background' or 'color'
+ * @param $prefix Class name prefix from root
+ * @param $separator separator between items
+ * @example
+ *  @include color-gradient-modifiers;
+ */
+@mixin color-gradient-modifiers($attribute: 'background', $angle: 180deg, $font-include: false, $prefix: '-', $separator: '-') {
+  @each $name, $color in $colors {
+    @each $tone, $hex in $color {
+      @each $name2, $color2 in $colors {
+        @each $tone2, $hex2 in $color2 {
+          &#{$prefix + $name + $separator + $tone + '-to-' + $name2 + $separator + $tone2} {
+            #{$attribute}: linear-gradient($angle, $hex, $hex2);
+              @if $font-include {
+                @include clip-text-background;
+              }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Apply color styles to a selector.
+ *
+ * @mixin
+ * @section Colors
+ * @param $attribute Either 'background' or 'color'
+ * @param $separator The character to separate words
+ * @example
+ *  .text {
+ *    @include color-modifiers('color', '-', '-');
+ *  }
+
+ */
+@mixin color-modifiers($attribute: 'color', $selector: "-", $separator: '-', $opacity: 1) {
+  @each $name, $color in $colors {
+    &#{$selector}#{$name} {
+      @each $tone, $hex in $color {
+        &#{$separator}#{$tone} {
+          #{$attribute}: rgba($hex, $opacity);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Used when applying a gradient to text
+ *
+ * @mixin
+ * @section Colors
+ * @example
+ *  @include clip-text-background;
+ */
+@mixin clip-text-background {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color {
+  @include color-modifiers('color');
+}
+
+.fill {
+  @include color-modifiers('fill');
+}
+
+.color-background {
+  @include color-modifiers('background-color');
+}
+
+.color-gradient-text {
+  @include color-gradient-modifiers('background', 0deg, true);
+  @include clip-text-background;
+}
+
+.color-gradient-background {
+  @include color-gradient-modifiers('background');
+}
+
+.color-gradient-background-rainbow-light {
+  @include color-gradient-rainbow-light('background', 90);
+  @include clip-text-background;
+}
+
+.color-gradient-background-rainbow-dark {
+  @include color-gradient-rainbow-dark('background', 90);
+  @include clip-text-background;
+}
+
+blockquote {
+  @include color-modifiers('background-color', '.', "-", .5);
+}

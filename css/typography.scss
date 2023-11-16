@@ -1,0 +1,720 @@
+@use 'sass:math';
+@use 'colors';
+@use 'functions';
+@use 'helpers';
+
+// Variables
+$paragraph-font: 'Anek Devanagari', 'Open Sans', sans-serif;
+$subheader-font: 'Viga';
+$header-font: "Agbalumo", 'Open Sans', sans-serif;
+$mono-font: monospace;
+
+$font-thin: 100;
+$font-lighter: 200;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-black: 800;
+
+$letter-spacing-tight: -0.02em;
+$letter-spacing-normal: 0;
+$letter-spacing-open: .1em;
+$letter-spacing-wide: 0.25em;
+$letter-spacing-perception: 0.5em;
+
+$line-height-tight: .85;
+$line-height-snug: .95;
+$line-height-normal: normal;
+$line-height-relaxed: 1.75;
+$line-height-loose: 2;
+
+$font-biggest: 6em;
+$font-bigger: 3em;
+$font-big: 2em;
+$font-regular: 1.25em;
+$font-small: 1.125em;
+$font-smaller: .75em;
+$font-tiny: .5em;
+
+
+// FONTS
+
+// Typefaces
+/**
+ * Runda: The header font.
+ *
+ * @mixin
+ * @section Fonts
+ * @example
+ *  @include font-header;
+ */
+@mixin font-header {
+  font-family: $header-font;
+}
+
+/**
+ * Forma DJR Micro: The body/paragraph font.
+ *
+ * @mixin
+ * @section Fonts
+ * @example
+ *  @include font-paragraph;
+ */
+@mixin font-paragraph {
+  font-family: $paragraph-font;
+}
+
+/**
+ * VT323: The body/paragraph font.
+ *
+ * @mixin
+ * @section Fonts
+ * @example
+ *  @include font-mono;
+ */
+@mixin font-mono {
+  font-family: $mono-font;
+}
+
+.font-mono {
+  @include font-mono;
+}
+
+// Font Styling
+/**
+ * Plain Font.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-plain;
+ */
+@mixin font-plain {
+  font-style: normal;
+}
+
+/**
+ * Italic Font.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-italic;
+ */
+@mixin font-italic {
+  font-style: italic;
+}
+
+/**
+ * Uppercase Text.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-uppercase;
+ */
+@mixin font-uppercase {
+  text-transform: uppercase;
+}
+
+
+// Font Weights
+/**
+ * Thin Font.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-thin;
+ */
+@mixin font-thin {
+  font-weight: $font-thin;
+}
+
+/**
+ * Lighter Font.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-lighter;
+ */
+@mixin font-lighter {
+  font-weight: $font-lighter;
+}
+
+/**
+ * Light Font.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-light;
+ */
+@mixin font-light {
+  font-weight: $font-light;
+}
+
+/**
+ * Normal Font.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-normal;
+ */
+@mixin font-normal {
+  font-weight: $font-normal;
+}
+
+/**
+ * Medium Font.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-medium;
+ */
+@mixin font-medium {
+  font-weight: $font-medium;
+}
+
+/**
+ * Semi-bold Font.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-semibold;
+ */
+@mixin font-semibold {
+  font-weight: $font-semibold;
+}
+
+/**
+ * Bold Font.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-bold;
+ */
+@mixin font-bold {
+  font-weight: $font-bold;
+}
+
+/**
+ * Black (boldest) Font.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-black;
+ */
+@mixin font-black {
+  font-weight: $font-black;
+}
+
+// Font Sizes
+
+/**
+ * Biggest Font Size.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-biggest;
+ */
+@mixin font-biggest {
+  font-size: $font-biggest;
+}
+
+/**
+ * Bigger Font Size.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-bigger;
+ */
+@mixin font-bigger {
+  font-size: $font-bigger;
+}
+
+/**
+ * Big Font Size.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-big;
+ */
+@mixin font-big {
+  font-size: $font-big;
+}
+
+/**
+ * Regular Font Size.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-regular;
+ */
+@mixin font-regular {
+  font-size: $font-regular;
+}
+
+/**
+ * Small Font Size.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-small;
+ */
+@mixin font-small {
+  font-size: $font-small;
+}
+
+/**
+ * Smaller Font Size.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-smaller;
+ */
+@mixin font-smaller {
+  font-size: $font-smaller;
+}
+
+/**
+ * Tiny Font Size.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-tiny;
+ */
+@mixin font-tiny {
+  font-size: $font-tiny;
+}
+
+// Letter Spacing
+
+/**
+ * Tight Letter Spacing.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-spacing-tight;
+ */
+@mixin font-spacing-tight {
+  letter-spacing: $letter-spacing-tight;
+}
+
+/**
+ * Normal Letter Spacing.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-spacing-tight;
+ */
+@mixin font-spacing-normal {
+  letter-spacing: $letter-spacing-normal;
+}
+
+/**
+ * Open Letter Spacing.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-spacing-tight;
+ */
+@mixin font-spacing-open {
+  letter-spacing: $letter-spacing-open;
+}
+
+/**
+ * Wide Letter Spacing.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-spacing-tight;
+ */
+@mixin font-spacing-wide {
+  letter-spacing: $letter-spacing-wide;
+}
+
+/**
+ * Extra-wide Letter Spacing.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-spacing-perception;
+ */
+@mixin font-spacing-perception {
+  letter-spacing: $letter-spacing-perception;
+}
+
+// Line Height
+
+/**
+ * Tight Line Height.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-line-height-tight;
+ */
+@mixin font-line-height-tight {
+  line-height: $line-height-tight;
+}
+
+/**
+ * Snug Line Height.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-line-height-tight;
+ */
+@mixin font-line-height-snug {
+  line-height: $line-height-snug;
+}
+
+/**
+ * Normal Line Height.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-line-height-tight;
+ */
+@mixin font-line-height-normal {
+  line-height: $line-height-normal;
+}
+
+/**
+ * Relaxed Line Height.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-line-height-tight;
+ */
+@mixin font-line-height-relaxed {
+  line-height: $line-height-relaxed;
+}
+
+/**
+ * Loose Line Height.
+ *
+ * @mixin
+ * @section Font Styles
+ * @example
+ *  @include font-line-height-tight;
+ */
+@mixin font-line-height-loose {
+  line-height: $line-height-loose;
+}
+
+// Font Maps
+$font-weights: ("font-thin", $font-thin),
+        ("font-lighter", $font-lighter),
+        ("font-light", $font-light),
+        ("font-normal", $font-normal),
+        ("font-medium", $font-medium),
+        ("font-semibold", $font-semibold),
+        ("font-bold", $font-bold),
+        ("font-black", $font-black);
+
+$font-sizes: ("font-biggest", $font-biggest),
+        ("font-bigger", $font-bigger),
+        ("font-big", $font-big),
+        ("font-regular", $font-regular),
+        ("font-small", $font-small),
+        ("font-smaller", $font-smaller),
+        ("font-tiny", $font-tiny);
+
+
+// Create classes for font weights and sizes
+@each $weight in $font-weights {
+  .#{nth($weight,1)}-bg {
+    font-weight: nth($weight, 2) !important;
+  }
+}
+
+@each $size in $font-sizes {
+  .#{nth($size,1)}-bg {
+    font-size: nth($size, 2) !important;
+  }
+}
+
+:is( h2, h3, h4, h5, figcaption, address, p, em, footer) {
+  @include font-paragraph;
+  @include font-normal;
+  @include font-regular;
+  //text-wrap: balance;
+  line-height: 1;
+
+  &.small {
+    @include font-small;
+  }
+
+  &.smaller {
+    @include font-smaller;
+  }
+}
+
+:is( h1, h6, blockquote, figcaption, aside ) {
+  @include font-header;
+  //text-wrap: balance;
+}
+
+:is( h1, h2, blockquote ) {
+  @include font-black;
+}
+
+/**
+ * @atom Heading 1
+ * @section Typography > Headings
+ * @markup
+ *  <h1>Space Hippo makes it go.</h1>
+ */
+h1 {
+  @include font-biggest;
+  @include font-black;
+  letter-spacing: $letter-spacing-normal;
+  line-height: $line-height-tight;
+  margin: 2vh 0;
+
+  &.headline {
+    font-size: $font-biggest * 1.5;
+    letter-spacing: $letter-spacing-tight;
+    @include helpers.responsive() {
+      font-size: calc($font-biggest / 2) !important;
+    }
+
+  }
+
+  &.subhead, &.small {
+    font-size: $font-bigger;
+    @include helpers.responsive() {
+      font-size: calc($font-bigger / 2) !important;
+    }
+  }
+
+  &.smaller {
+    font-size: $font-regular;
+  }
+
+}
+
+/**
+ * @atom Heading 2
+ * @section Typography > Headings
+ * @markup
+ *  <h2>We&apos;re powered by a desire to leave nothing unimagined or unexplored.</h2>
+ */
+h2 {
+  @include font-thin;
+  @include font-bigger;
+  font-family: $subheader-font;
+      @include helpers.responsive() {
+      font-size: calc($font-bigger / 2) !important;
+    }
+
+}
+
+/**
+ * @atom Heading 3
+ * @section Typography > Headings
+ * @markup
+ *  <h3>We aim to continually explore new and exciting technology.</h3>
+ */
+h3 {
+  @include font-big;
+  font-family: $paragraph-font;
+      @include helpers.responsive() {
+      font-size: calc($font-big / 1.5) !important;
+    }
+}
+
+/**
+ * @atom Heading 4
+ * @section Typography > Headings
+ * @markup
+ *  <h4>We build out-of-this world experiences to boost interstellar brands.</h4>
+ */
+h4 {
+  @include font-regular;
+  @include font-bold;
+}
+
+/**
+ * @atom Heading 5
+ * @section Typography > Headings
+ * @markup
+ *  <h5>Our mission is to make deeper emotional connections with consumers, enhancing both brand loyalty and awareness.</h5>
+ */
+h5 {
+  @include font-italic;
+  @include font-smaller;
+}
+
+/**
+ * @atom Heading 6
+ * @section Typography > Headings
+ * @markup
+ *  <h6>Cute but fierce, hippos were once land-dwelling creatures. Because of their tenacity and fearlessness, they were successfully recruited for interstellar missions. They also look super adorable in a space helmet.</h6>
+ */
+h6 {
+  @include font-tiny;
+  @include font-black;
+}
+
+p, address {
+  @include font-regular;
+  letter-spacing: $letter-spacing-normal;
+
+  &.small {
+    @include font-small;
+  }
+
+  &.large {
+    @include font-big;
+  }
+}
+
+/**
+ * @atom Paragraph
+ * @section Typography > Text Elements
+ * @markup
+ *  <p>Our primary mission is to make deeper emotional connections with your consumers, enhancing both brand loyalty and awareness.</p>
+ */
+p {
+  @include font-normal;
+  margin: math.div($font-regular, 1.5) 0;
+
+  &.extra-margin {
+    margin: math.div($font-regular, 2) 0;
+  }
+}
+
+/**
+ * @atom Address
+ * @section Typography > Text Elements
+ * @markup
+ *  <address>3° 12' 43.2" S, 5° 12' 39.6" W</address>
+ */
+address {
+  @include font-normal;
+  font-style: normal !important;
+}
+
+em {
+  @include font-italic;
+}
+
+b {
+  @include font-black;
+}
+
+a {
+  color: colors.$color-venere-light;
+}
+
+blockquote, figcaption {
+  text-align: right;
+}
+
+/**
+ * @atom Blockquote
+ * @section Typography > Text Elements
+ * @markup
+ *  <blockquote>We live in a world where man has walked on the moon. It wasn't a miracle; we just decided to go.</blockquote>
+ */
+blockquote {
+  @include font-regular;
+  padding: $font-small;
+}
+
+aside {
+  @include font-regular;
+  padding: $font-regular;
+  margin: $font-regular;
+}
+
+/**
+ * @atom Fig Caption
+ * @section Typography > Text Elements
+ * @markup
+ *  <figcaption>Captain Jim Lovell</figcaption>
+ */
+figcaption {
+  @include font-regular;
+}
+
+/**
+ * Apply a drop shadow to text.
+ *
+ * @mixin
+ * @section Font Effects
+ * @param $color The color of the shadow; can be an rgba() value. Defaults to $color-dark.
+ * @param $x The x-offset of the shadow. Defaults to 2px.
+ * @param $y The y-offset of the shadow. Defaults to 2px.
+ * @param $blur The blur radius of the shadow. Defaults to 3px.
+ * @example
+ *  .text {
+ *    @include functions.font-shadow(rgba(0,0,0,0.5), 2px, 2px, 3px);
+ *  }
+
+ */
+
+.font-shadow {
+  @include functions.font-shadow;
+}
+
+.font-shadow-white {
+  @include functions.font-shadow(colors.$color-bright, 0, 0, 5px);
+}
+
+.shadow {
+  @include functions.shadow;
+  transition: ease-in-out 1s;
+
+  &.large-1 {
+    @include functions.shadow($color: scale-color(rgba(colors.$color-sol-dark, 1.0), $lightness: 50%), $x: -1em, $y: -1.5em, $blur: 1.25em);
+  }
+  &.large-2 {
+    @include functions.shadow($color: scale-color(rgba(colors.$color-sol-dark, .25), $lightness: 70%), $x: -1em, $y: -1.5em, $blur: 1em);
+  }
+  &.large-3 {
+    @include functions.shadow($color: scale-color(rgba(colors.$color-sol-dark, .50), $lightness: 60%), $x: -1em, $y: -1.5em, $blur: 1.5em);
+  }
+}
+
+
+ul {
+
+  &.item-list {
+    list-style-type: none;
+    margin-top: $font-regular;
+    margin-left: 0;
+    padding: 0;
+
+    li, li :is( h1, h2, h3, h4, h5, h6, blockquote, figcaption) {
+      margin: 0 0 $font-tiny 0;
+    }
+  }
+}
+
