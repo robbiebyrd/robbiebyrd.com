@@ -151,7 +151,7 @@ nav.main {
   opacity: 0;
   position: relative;
   animation: 2s ease-out up-down-fade-in-animation 3s none, 1s linear up-down-animation 5s infinite alternate;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,23 +208,23 @@ nav.main {
 
 .fade-in-test-animation-1 {
   animation: 4s linear .65s fade-in-test;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards !important;
 }
 
 .fade-in-test-animation-2 {
   animation: 3.1s linear .5s fade-in-test;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards !important;
 }
 
 .fade-in-test-animation-3 {
   animation: 1.25s linear 4.25s fade-in-test-2;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards !important;
 }
 
 .fade-in-test-animation-4 {
   animation: 2s linear 4s fade-in-animation;
   opacity: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards !important;
 }
 
 /*#main-1 {*/
